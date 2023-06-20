@@ -1,0 +1,27 @@
+{
+    "BROKER_URL": "localhost",
+    "BROKER_PORT": 1883,
+    "TOPICS": [
+        {
+            "TYPE": "multiple",
+            "PREFIX": "irrigation",
+            "RANGE_START": 1,
+            "RANGE_END": 25,
+            "TIME_INTERVAL": 5,
+            "RETAIN_PROBABILITY": 0.85,
+            "DATA": [
+                {
+                    "NAME": "on",
+                    "TYPE": "bool"
+                },
+                {
+                    "NAME": "temperature",
+                    "TYPE": "int",
+                    "MIN_VALUE": 0,
+                    "MAX_VALUE": 50,
+                    "MAX_STEP": 50
+                }
+            ]
+        }
+    ]
+}
