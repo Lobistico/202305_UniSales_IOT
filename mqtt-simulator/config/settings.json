@@ -6,7 +6,7 @@
             "TYPE": "multiple",
             "PREFIX": "irrigation",
             "RANGE_START": 1,
-            "RANGE_END": 25,
+            "RANGE_END": 20,
             "TIME_INTERVAL": 5,
             "RETAIN_PROBABILITY": 0.85,
             "DATA": [
