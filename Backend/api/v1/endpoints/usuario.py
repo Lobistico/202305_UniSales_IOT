@@ -16,132 +16,81 @@ from core.auth import criar_acess_token, get_current_user
 from fastapi.security import OAuth2PasswordRequestForm
 import uuid
 import os
+from core.configs import settings
+from core.database import engine
+from influxdb_client import InfluxDBClient, Point, WritePrecision
+from influxdb_client.client.write_api import SYNCHRONOUS
+import influxdb_client, os, time
 
 
+bucket="Usuarios"
+INFLUXDB_TOKEN = "167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=="
+INFLUXDB_URL = "http://localhost:8086"
+INFLUXDB_TOKEN = "seu_token"
+INFLUXDB_ORG = "my-org"
+os.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='
+token = os.environ.get("INFLUXDB_TOKEN")
+org = "my-org"
+url = "http://localhost:8086"
+client = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)
+client = InfluxDBClient(url=url, token=token, org=org)
+  
 
 
 router = APIRouter(dependencies=[Depends(get_current_user)])
+# router = APIRouter()
 routerLogin = APIRouter()
 
-@router.get('/me', response_model=UsuarioSchemaBase)
+@router.post('/signup', status_code=status.HTTP_201_CREATED)
+async def post_usuario(usuario: UsuarioSchemaCreate):
+    
+            
+    try:
+        write_api = client.write_api(write_options=SYNCHRONOUS)
+        point = Point("usuário").tag("email", usuario.email).field("senha", gerar_hash_senha(usuario.senha))
+        write_api.write(bucket=bucket, org=org, record=point)
+    except IntegrityError:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail='Não foi possivel criar novo usuário')
+    
+    return usuario
+
+
+@router.get('/me')
 async def me(usuario = Depends(get_current_user)):
     return usuario
     
+
 @routerLogin.post('/login')
-async def autentica_user(OAuth2PasswordRequestForm: OAuth2PasswordRequestForm = Depends(),db: AsyncSession = Depends(get_session)):
-    async with db as session:
-        query = select(UsuarioModel).filter(UsuarioModel.email == OAuth2PasswordRequestForm.username)
-        result = await session.execute(query)
-        usuario: UsuarioSchemaBase = result.scalars().unique().one_or_none()
-
-        if(usuario and (comparar_senha(OAuth2PasswordRequestForm.password, usuario.senha))):
-            token = criar_acess_token(str(usuario.id))
-            return {
-                "access_token": token,
-                "token_type": "bearer"
-            }
-        else:
-            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Email ou senha incorretos")    
-
-            
-@router.post('/signup', status_code=status.HTTP_201_CREATED, response_model=UsuarioSchemaBase)
-async def post_usuario(nome = Form(...), email = Form(...), senha = Form(...),db: AsyncSession = Depends(get_session), file: UploadFile = File(..., media_type='image/jpeg')):
-    file.filename = f"{uuid.uuid4()}.jpg"
-    contents = await file.read()
-    dir = os.path.abspath('./assets/image/')
+async def autentica_user(OAuth2PasswordRequestForm: OAuth2PasswordRequestForm = Depends()):
+    query = 'from(bucket: "Usuarios") |> range(start: -1d) |> limit(n: 10)'
+    result = client.query_api().query(org=org, query=query)
     
-    with open(f"{dir}{file.filename}", "wb") as f:
-        f.write(contents)
+    data = []
+    for table in result:
+        for record in table.records:
+            if record.values["email"] == OAuth2PasswordRequestForm.username and comparar_senha(OAuth2PasswordRequestForm.password, record.values["_value"]):
+                data.append(record.values)
 
-    novo_usuario: UsuarioModel = UsuarioModel(
-        nome=nome, 
-        email=email,
-        imagem= f"{dir}{file.filename}", 
-        senha=gerar_hash_senha(senha), 
-        criado_em = str(datetime.now()), 
-        atualizado_em = str(datetime.now()))
-    async with db as session:
-        try:
-            session.add(novo_usuario)
-            await session.commit()
-            return novo_usuario
-        except IntegrityError:
-            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail='Não foi possivel criar novo usuário')
-        
-        
-@router.get('/', response_model=List[UsuarioSchemaBase])
+    if data:
+        token = criar_acess_token(str(record.values["email"]))
+        return {
+            "access_token": token,
+            "token_type": "bearer"
+        }
+    else:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Email ou senha incorretos") 
+
+@router.get('/')
 async def get_usuarios(db: AsyncSession = Depends(get_session), usuarioLogado = Depends(get_current_user)):
-    async with db as session:
-        query = select(UsuarioModel)
-        result = await session.execute(query)
-        usuarios: List[UsuarioSchemaBase] = result.scalars().unique().all()
-        return usuarios
+    query = 'from(bucket: "Usuarios") |> range(start: -1d) |> limit(n: 10)'
+    result = client.query_api().query(org=org, query=query)
+
+    data = []
+    for table in result:
+        for record in table.records:
+            data.append(record.values)
+    return data
+
+
     
-@router.get('/{id}', response_model=UsuarioSchemaTarefa)
-async def get_usuario(id: int, db: AsyncSession = Depends(get_session), usuarioLogado = Depends(get_current_user)):
-    async with db as session:
-        query = select(UsuarioModel).filter(UsuarioModel.id == id)
-        result = await session.execute(query)
-        usuario: UsuarioSchemaBase = result.scalars().unique().one_or_none()
-        if usuario:
-            return usuario
-        else:
-            raise HTTPException(detail='Usuário não encontrado',
-                                status_code=status.HTTP_404_NOT_FOUND)
-        
-@router.delete('/{id}', status_code= status.HTTP_204_NO_CONTENT)
-async def delete_usuario(id: int, db: AsyncSession = Depends(get_session), usuarioLogado = Depends(get_current_user)):
-    async with db as session:
-        query = select(UsuarioModel).filter(UsuarioModel.id == id)
-        result = await session.execute(query)
-        usuario: UsuarioModel = result.scalars().unique().one_or_none()
-        if usuario:
-            await session.delete(usuario)
-            await session.commit()
-            Response(status_code=status.HTTP_204_NO_CONTENT)
-        else:
-            raise HTTPException(detail='Usuário não encontrado',
-                                status_code=status.HTTP_404_NOT_FOUND)
-        
-@router.put('/{id}' ,status_code= status.HTTP_202_ACCEPTED, response_model=UsuarioSchemaBase)
-async def put_usuario(id: int, nome = Form(...), email = Form(...), senha = Form(...) , file: UploadFile = File(..., media_type='image/jpeg'), db: AsyncSession = Depends(get_session), usuarioLogado = Depends(get_current_user)):
-    async with db as session:
-        query = select(UsuarioModel).filter(UsuarioModel.id == id)
-        result = await session.execute(query)
-        usuario_update: UsuarioSchemaCreate = result.scalars().unique().one_or_none()
 
-        if os.path.exists(usuario_update.imagem):
-            os.remove(usuario_update.imagem)
-            
-        file.filename = f"{uuid.uuid4()}.jpg"
-        contents = await file.read()
-        dir = os.path.abspath('./assets/image/')
-        
-        with open(f"{dir}{file.filename}", "wb") as f:
-            f.write(contents)
-
-        if usuario_update:
-            usuario_update.nome = nome
-            usuario_update.email = email 
-            usuario_update.senha = senha
-            usuario_update.imagem = f"{dir}{file.filename}"
-            usuario_update.atualizado_em = str(datetime.now())
-            await session.commit()
-            return usuario_update
-        else:
-            raise HTTPException(detail='Usuário não encontrado',
-                                status_code=status.HTTP_404_NOT_FOUND)
-
-
-
-@router.post("/upload")
-async def create_upload_file(file: UploadFile = File(...)):
- 
-    file.filename = f"{uuid.uuid4()}.jpg"
-    contents = await file.read()
-    dir = os.path.abspath('./assets/image/')
-    
-    with open(f"{dir}{file.filename}", "wb") as f:
-        f.write(contents)
-    return {"filename": file.filename}
- 
