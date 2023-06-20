@@ -13,6 +13,7 @@ def on_connect(client, userdata, flags, rc):
 # Função de callback para quando uma mensagem MQTT é recebida
 def on_message(client, userdata, msg):
     print(f"Mensagem recebida - Tópico: {msg.topic}, Mensagem: {msg.payload.decode()}")
+    
 
 # Cria um cliente MQTT
 mqtt_client = mqtt.Client()
