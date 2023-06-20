@@ -11,7 +11,21 @@ from core.deps import get_session
 from schemas.usuario_schema import *
 from jose.exceptions import JWTError
 
+from influxdb_client import InfluxDBClient, Point, WritePrecision
+from influxdb_client.client.write_api import SYNCHRONOUS
+import influxdb_client, os, time
 
+bucket="Usuarios"
+INFLUXDB_TOKEN = "167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=="
+INFLUXDB_URL = "http://localhost:8086"
+INFLUXDB_TOKEN = "seu_token"
+INFLUXDB_ORG = "my-org"
+os.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='
+token = os.environ.get("INFLUXDB_TOKEN")
+org = "my-org"
+url = "http://localhost:8086"
+client = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)
+client = InfluxDBClient(url=url, token=token, org=org)
 
 SECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'
 ALGORITH: str = 'HS256'
@@ -28,7 +42,7 @@ def criar_acess_token(usuario_id: str):
     token_jwt = jwt.encode(payload, SECRET_KEY, algorithm=ALGORITH)
     return token_jwt
 
-async def get_current_user(token: str = Depends(oauth2_scheme), db: AsyncSession = Depends(get_session)):
+async def get_current_user(token: str = Depends(oauth2_scheme)):
     credentials_exception = HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
         detail="Não Autenticado",
@@ -37,14 +51,17 @@ async def get_current_user(token: str = Depends(oauth2_scheme), db: AsyncSession
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=['HS256'])
         usuario_id: str = payload.get('sub')
-        async with db as session:
-            query = select(UsuarioModel).filter(UsuarioModel.id == int(usuario_id))
-            result = await session.execute(query)
-            usuario: UsuarioSchemaBase = result.scalars().unique().one_or_none()
-            if usuario:
-                return usuario
-            else:
-                raise credentials_exception
+
+        query = 'from(bucket: "Usuarios") |> range(start: -1d) |> limit(n: 10)'
+        result = client.query_api().query(org=org, query=query)
+
+        data = []
+        for table in result:
+            for record in table.records:
+                if record.values["email"] == usuario_id:
+                    data.append(record.values)
+        return data
+        
     except JWTError:
         raise credentials_exception
     

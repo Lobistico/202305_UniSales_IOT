@@ -591,6 +591,215 @@
         "documentation": {}
     },
     {
+        "label": "settings",
+        "importPath": "core.configs",
+        "description": "core.configs",
+        "isExtraImport": true,
+        "detail": "core.configs",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "core.configs",
+        "description": "core.configs",
+        "isExtraImport": true,
+        "detail": "core.configs",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "core.configs",
+        "description": "core.configs",
+        "isExtraImport": true,
+        "detail": "core.configs",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "core.configs",
+        "description": "core.configs",
+        "isExtraImport": true,
+        "detail": "core.configs",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "core.configs",
+        "description": "core.configs",
+        "isExtraImport": true,
+        "detail": "core.configs",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "importPath": "core.database",
+        "description": "core.database",
+        "isExtraImport": true,
+        "detail": "core.database",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "core.database",
+        "description": "core.database",
+        "isExtraImport": true,
+        "detail": "core.database",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "importPath": "core.database",
+        "description": "core.database",
+        "isExtraImport": true,
+        "detail": "core.database",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "importPath": "core.database",
+        "description": "core.database",
+        "isExtraImport": true,
+        "detail": "core.database",
+        "documentation": {}
+    },
+    {
+        "label": "InfluxDBClient",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "Point",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "WritePrecision",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "InfluxDBClient",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "Point",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "WritePrecision",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "InfluxDBClient",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "Point",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "WritePrecision",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "InfluxDBClient",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "Point",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "WritePrecision",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "SYNCHRONOUS",
+        "importPath": "influxdb_client.client.write_api",
+        "description": "influxdb_client.client.write_api",
+        "isExtraImport": true,
+        "detail": "influxdb_client.client.write_api",
+        "documentation": {}
+    },
+    {
+        "label": "SYNCHRONOUS",
+        "importPath": "influxdb_client.client.write_api",
+        "description": "influxdb_client.client.write_api",
+        "isExtraImport": true,
+        "detail": "influxdb_client.client.write_api",
+        "documentation": {}
+    },
+    {
+        "label": "SYNCHRONOUS",
+        "importPath": "influxdb_client.client.write_api",
+        "description": "influxdb_client.client.write_api",
+        "isExtraImport": true,
+        "detail": "influxdb_client.client.write_api",
+        "documentation": {}
+    },
+    {
+        "label": "SYNCHRONOUS",
+        "importPath": "influxdb_client.client.write_api",
+        "description": "influxdb_client.client.write_api",
+        "isExtraImport": true,
+        "detail": "influxdb_client.client.write_api",
+        "documentation": {}
+    },
+    {
+        "label": "influxdb_client,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "influxdb_client.",
+        "description": "influxdb_client.",
+        "detail": "influxdb_client.",
+        "documentation": {}
+    },
+    {
         "label": "jwt",
         "importPath": "jose",
         "description": "jose",
@@ -620,62 +829,6 @@
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
         "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "core.configs",
-        "description": "core.configs",
-        "isExtraImport": true,
-        "detail": "core.configs",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "core.configs",
-        "description": "core.configs",
-        "isExtraImport": true,
-        "detail": "core.configs",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "core.configs",
-        "description": "core.configs",
-        "isExtraImport": true,
-        "detail": "core.configs",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "core.configs",
-        "description": "core.configs",
-        "isExtraImport": true,
-        "detail": "core.configs",
-        "documentation": {}
-    },
-    {
-        "label": "Session",
-        "importPath": "core.database",
-        "description": "core.database",
-        "isExtraImport": true,
-        "detail": "core.database",
-        "documentation": {}
-    },
-    {
-        "label": "engine",
-        "importPath": "core.database",
-        "description": "core.database",
-        "isExtraImport": true,
-        "detail": "core.database",
-        "documentation": {}
-    },
-    {
-        "label": "engine",
-        "importPath": "core.database",
-        "description": "core.database",
-        "isExtraImport": true,
-        "detail": "core.database",
         "documentation": {}
     },
     {
@@ -768,11 +921,195 @@
         "documentation": {}
     },
     {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Simulator",
+        "importPath": "simulator",
+        "description": "simulator",
+        "isExtraImport": true,
+        "detail": "simulator",
+        "documentation": {}
+    },
+    {
+        "label": "paho.mqtt.client",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "paho.mqtt.client",
+        "description": "paho.mqtt.client",
+        "detail": "paho.mqtt.client",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "TopicAuto",
+        "importPath": "topic",
+        "description": "topic",
+        "isExtraImport": true,
+        "detail": "topic",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "INFLUXDB_TOKEN",
+        "kind": 5,
+        "importPath": "Backend.api.v1.endpoints.usuario",
+        "description": "Backend.api.v1.endpoints.usuario",
+        "peekOfCode": "INFLUXDB_TOKEN = \"167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg==\"\nINFLUXDB_URL = \"http://localhost:8086\"\nINFLUXDB_TOKEN = \"seu_token\"\nINFLUXDB_ORG = \"my-org\"\nos.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)",
+        "detail": "Backend.api.v1.endpoints.usuario",
+        "documentation": {}
+    },
+    {
+        "label": "INFLUXDB_URL",
+        "kind": 5,
+        "importPath": "Backend.api.v1.endpoints.usuario",
+        "description": "Backend.api.v1.endpoints.usuario",
+        "peekOfCode": "INFLUXDB_URL = \"http://localhost:8086\"\nINFLUXDB_TOKEN = \"seu_token\"\nINFLUXDB_ORG = \"my-org\"\nos.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])",
+        "detail": "Backend.api.v1.endpoints.usuario",
+        "documentation": {}
+    },
+    {
+        "label": "INFLUXDB_TOKEN",
+        "kind": 5,
+        "importPath": "Backend.api.v1.endpoints.usuario",
+        "description": "Backend.api.v1.endpoints.usuario",
+        "peekOfCode": "INFLUXDB_TOKEN = \"seu_token\"\nINFLUXDB_ORG = \"my-org\"\nos.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()",
+        "detail": "Backend.api.v1.endpoints.usuario",
+        "documentation": {}
+    },
+    {
+        "label": "INFLUXDB_ORG",
+        "kind": 5,
+        "importPath": "Backend.api.v1.endpoints.usuario",
+        "description": "Backend.api.v1.endpoints.usuario",
+        "peekOfCode": "INFLUXDB_ORG = \"my-org\"\nos.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()",
+        "detail": "Backend.api.v1.endpoints.usuario",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ['INFLUXDB_TOKEN']",
+        "kind": 5,
+        "importPath": "Backend.api.v1.endpoints.usuario",
+        "description": "Backend.api.v1.endpoints.usuario",
+        "peekOfCode": "os.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@router.post('/signup', status_code=status.HTTP_201_CREATED)",
+        "detail": "Backend.api.v1.endpoints.usuario",
+        "documentation": {}
+    },
+    {
+        "label": "token",
+        "kind": 5,
+        "importPath": "Backend.api.v1.endpoints.usuario",
+        "description": "Backend.api.v1.endpoints.usuario",
+        "peekOfCode": "token = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@router.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):",
+        "detail": "Backend.api.v1.endpoints.usuario",
+        "documentation": {}
+    },
+    {
+        "label": "org",
+        "kind": 5,
+        "importPath": "Backend.api.v1.endpoints.usuario",
+        "description": "Backend.api.v1.endpoints.usuario",
+        "peekOfCode": "org = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@router.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    try:",
+        "detail": "Backend.api.v1.endpoints.usuario",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "Backend.api.v1.endpoints.usuario",
+        "description": "Backend.api.v1.endpoints.usuario",
+        "peekOfCode": "url = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@router.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    try:\n        write_api = client.write_api(write_options=SYNCHRONOUS)",
+        "detail": "Backend.api.v1.endpoints.usuario",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "Backend.api.v1.endpoints.usuario",
+        "description": "Backend.api.v1.endpoints.usuario",
+        "peekOfCode": "client = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@router.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    try:\n        write_api = client.write_api(write_options=SYNCHRONOUS)\n        point = Point(\"usuário\").tag(\"email\", usuario.email).field(\"senha\", gerar_hash_senha(usuario.senha))",
+        "detail": "Backend.api.v1.endpoints.usuario",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "Backend.api.v1.endpoints.usuario",
+        "description": "Backend.api.v1.endpoints.usuario",
+        "peekOfCode": "client = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@router.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    try:\n        write_api = client.write_api(write_options=SYNCHRONOUS)\n        point = Point(\"usuário\").tag(\"email\", usuario.email).field(\"senha\", gerar_hash_senha(usuario.senha))\n        write_api.write(bucket=bucket, org=org, record=point)",
+        "detail": "Backend.api.v1.endpoints.usuario",
+        "documentation": {}
+    },
+    {
         "label": "router",
         "kind": 5,
         "importPath": "Backend.api.v1.endpoints.usuario",
         "description": "Backend.api.v1.endpoints.usuario",
-        "peekOfCode": "router = APIRouter(dependencies=[Depends(get_current_user)])\nrouterLogin = APIRouter()\n@router.get('/me', response_model=UsuarioSchemaBase)\nasync def me(usuario = Depends(get_current_user)):\n    return usuario\n@routerLogin.post('/login')\nasync def autentica_user(OAuth2PasswordRequestForm: OAuth2PasswordRequestForm = Depends(),db: AsyncSession = Depends(get_session)):\n    async with db as session:\n        query = select(UsuarioModel).filter(UsuarioModel.email == OAuth2PasswordRequestForm.username)\n        result = await session.execute(query)",
+        "peekOfCode": "router = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@router.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    try:\n        write_api = client.write_api(write_options=SYNCHRONOUS)\n        point = Point(\"usuário\").tag(\"email\", usuario.email).field(\"senha\", gerar_hash_senha(usuario.senha))\n        write_api.write(bucket=bucket, org=org, record=point)\n    except IntegrityError:",
         "detail": "Backend.api.v1.endpoints.usuario",
         "documentation": {}
     },
@@ -781,7 +1118,7 @@
         "kind": 5,
         "importPath": "Backend.api.v1.endpoints.usuario",
         "description": "Backend.api.v1.endpoints.usuario",
-        "peekOfCode": "routerLogin = APIRouter()\n@router.get('/me', response_model=UsuarioSchemaBase)\nasync def me(usuario = Depends(get_current_user)):\n    return usuario\n@routerLogin.post('/login')\nasync def autentica_user(OAuth2PasswordRequestForm: OAuth2PasswordRequestForm = Depends(),db: AsyncSession = Depends(get_session)):\n    async with db as session:\n        query = select(UsuarioModel).filter(UsuarioModel.email == OAuth2PasswordRequestForm.username)\n        result = await session.execute(query)\n        usuario: UsuarioSchemaBase = result.scalars().unique().one_or_none()",
+        "peekOfCode": "routerLogin = APIRouter()\n@router.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    try:\n        write_api = client.write_api(write_options=SYNCHRONOUS)\n        point = Point(\"usuário\").tag(\"email\", usuario.email).field(\"senha\", gerar_hash_senha(usuario.senha))\n        write_api.write(bucket=bucket, org=org, record=point)\n    except IntegrityError:\n        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail='Não foi possivel criar novo usuário')\n    return usuario",
         "detail": "Backend.api.v1.endpoints.usuario",
         "documentation": {}
     },
@@ -799,7 +1136,97 @@
         "kind": 2,
         "importPath": "Backend.core.auth",
         "description": "Backend.core.auth",
-        "peekOfCode": "def criar_acess_token(usuario_id: str):\n    expiracao = str(datetime.utcnow() + timedelta(EXPIRES_IN_MIN))\n    payload = {\n        'sub': usuario_id,\n        'ext': expiracao\n        }\n    token_jwt = jwt.encode(payload, SECRET_KEY, algorithm=ALGORITH)\n    return token_jwt\nasync def get_current_user(token: str = Depends(oauth2_scheme), db: AsyncSession = Depends(get_session)):\n    credentials_exception = HTTPException(",
+        "peekOfCode": "def criar_acess_token(usuario_id: str):\n    expiracao = str(datetime.utcnow() + timedelta(EXPIRES_IN_MIN))\n    payload = {\n        'sub': usuario_id,\n        'ext': expiracao\n        }\n    token_jwt = jwt.encode(payload, SECRET_KEY, algorithm=ALGORITH)\n    return token_jwt\nasync def get_current_user(token: str = Depends(oauth2_scheme)):\n    credentials_exception = HTTPException(",
+        "detail": "Backend.core.auth",
+        "documentation": {}
+    },
+    {
+        "label": "INFLUXDB_TOKEN",
+        "kind": 5,
+        "importPath": "Backend.core.auth",
+        "description": "Backend.core.auth",
+        "peekOfCode": "INFLUXDB_TOKEN = \"167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg==\"\nINFLUXDB_URL = \"http://localhost:8086\"\nINFLUXDB_TOKEN = \"seu_token\"\nINFLUXDB_ORG = \"my-org\"\nos.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)",
+        "detail": "Backend.core.auth",
+        "documentation": {}
+    },
+    {
+        "label": "INFLUXDB_URL",
+        "kind": 5,
+        "importPath": "Backend.core.auth",
+        "description": "Backend.core.auth",
+        "peekOfCode": "INFLUXDB_URL = \"http://localhost:8086\"\nINFLUXDB_TOKEN = \"seu_token\"\nINFLUXDB_ORG = \"my-org\"\nos.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'",
+        "detail": "Backend.core.auth",
+        "documentation": {}
+    },
+    {
+        "label": "INFLUXDB_TOKEN",
+        "kind": 5,
+        "importPath": "Backend.core.auth",
+        "description": "Backend.core.auth",
+        "peekOfCode": "INFLUXDB_TOKEN = \"seu_token\"\nINFLUXDB_ORG = \"my-org\"\nos.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'",
+        "detail": "Backend.core.auth",
+        "documentation": {}
+    },
+    {
+        "label": "INFLUXDB_ORG",
+        "kind": 5,
+        "importPath": "Backend.core.auth",
+        "description": "Backend.core.auth",
+        "peekOfCode": "INFLUXDB_ORG = \"my-org\"\nos.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'\nEXPIRES_IN_MIN = 60*24*7",
+        "detail": "Backend.core.auth",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ['INFLUXDB_TOKEN']",
+        "kind": 5,
+        "importPath": "Backend.core.auth",
+        "description": "Backend.core.auth",
+        "peekOfCode": "os.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'\nEXPIRES_IN_MIN = 60*24*7\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/api/v1/usuarios/login\")",
+        "detail": "Backend.core.auth",
+        "documentation": {}
+    },
+    {
+        "label": "token",
+        "kind": 5,
+        "importPath": "Backend.core.auth",
+        "description": "Backend.core.auth",
+        "peekOfCode": "token = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'\nEXPIRES_IN_MIN = 60*24*7\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/api/v1/usuarios/login\")\ndef criar_acess_token(usuario_id: str):",
+        "detail": "Backend.core.auth",
+        "documentation": {}
+    },
+    {
+        "label": "org",
+        "kind": 5,
+        "importPath": "Backend.core.auth",
+        "description": "Backend.core.auth",
+        "peekOfCode": "org = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'\nEXPIRES_IN_MIN = 60*24*7\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/api/v1/usuarios/login\")\ndef criar_acess_token(usuario_id: str):\n    expiracao = str(datetime.utcnow() + timedelta(EXPIRES_IN_MIN))",
+        "detail": "Backend.core.auth",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "Backend.core.auth",
+        "description": "Backend.core.auth",
+        "peekOfCode": "url = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'\nEXPIRES_IN_MIN = 60*24*7\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/api/v1/usuarios/login\")\ndef criar_acess_token(usuario_id: str):\n    expiracao = str(datetime.utcnow() + timedelta(EXPIRES_IN_MIN))\n    payload = {",
+        "detail": "Backend.core.auth",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "Backend.core.auth",
+        "description": "Backend.core.auth",
+        "peekOfCode": "client = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'\nEXPIRES_IN_MIN = 60*24*7\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/api/v1/usuarios/login\")\ndef criar_acess_token(usuario_id: str):\n    expiracao = str(datetime.utcnow() + timedelta(EXPIRES_IN_MIN))\n    payload = {\n        'sub': usuario_id,",
+        "detail": "Backend.core.auth",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "Backend.core.auth",
+        "description": "Backend.core.auth",
+        "peekOfCode": "client = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'\nEXPIRES_IN_MIN = 60*24*7\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/api/v1/usuarios/login\")\ndef criar_acess_token(usuario_id: str):\n    expiracao = str(datetime.utcnow() + timedelta(EXPIRES_IN_MIN))\n    payload = {\n        'sub': usuario_id,\n        'ext': expiracao",
         "detail": "Backend.core.auth",
         "documentation": {}
     },
@@ -817,7 +1244,7 @@
         "kind": 5,
         "importPath": "Backend.core.auth",
         "description": "Backend.core.auth",
-        "peekOfCode": "oauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/api/v1/usuarios/login\")\ndef criar_acess_token(usuario_id: str):\n    expiracao = str(datetime.utcnow() + timedelta(EXPIRES_IN_MIN))\n    payload = {\n        'sub': usuario_id,\n        'ext': expiracao\n        }\n    token_jwt = jwt.encode(payload, SECRET_KEY, algorithm=ALGORITH)\n    return token_jwt\nasync def get_current_user(token: str = Depends(oauth2_scheme), db: AsyncSession = Depends(get_session)):",
+        "peekOfCode": "oauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/api/v1/usuarios/login\")\ndef criar_acess_token(usuario_id: str):\n    expiracao = str(datetime.utcnow() + timedelta(EXPIRES_IN_MIN))\n    payload = {\n        'sub': usuario_id,\n        'ext': expiracao\n        }\n    token_jwt = jwt.encode(payload, SECRET_KEY, algorithm=ALGORITH)\n    return token_jwt\nasync def get_current_user(token: str = Depends(oauth2_scheme)):",
         "detail": "Backend.core.auth",
         "documentation": {}
     },
@@ -826,7 +1253,7 @@
         "kind": 6,
         "importPath": "Backend.core.configs",
         "description": "Backend.core.configs",
-        "peekOfCode": "class Settings(BaseSettings):\n    API_V1: str = '/api/v1'\n    DB_URL: str = 'mysql+asyncmy://root:root@localhost/seed?charset=utf8mb4'\n    DBBaseModel = declarative_base()\n    class Config:\n        case_sensitive: True\nsettings = Settings()",
+        "peekOfCode": "class Settings(BaseSettings):\n    API_V1: str = '/api/v1'\n    DB_URL: str = 'mysql+asyncmy://root:root@localhost/seed?charset=utf8mb4'\n    DBBaseModel = declarative_base()\n    os.environ['INFLUXDB_TOKEN'] = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\n    token = os.environ.get(\"INFLUXDB_TOKEN\")\n    org = \"my-org\"\n    url = \"http://localhost:8086\"\n    write_client = influxdb_client.InfluxDBClient(url=url, token=token, org=org)\n    class Config:",
         "detail": "Backend.core.configs",
         "documentation": {}
     },
@@ -930,6 +1357,15 @@
         "documentation": {}
     },
     {
+        "label": "testeInfluxDb",
+        "kind": 2,
+        "importPath": "Backend.criar_tabelas",
+        "description": "Backend.criar_tabelas",
+        "peekOfCode": "def testeInfluxDb():\n    import os\n    bucket=\"Usuarios\"\n    INFLUXDB_TOKEN = \"167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg==\"\n    INFLUXDB_URL = \"http://localhost:8086\"\n    INFLUXDB_TOKEN = \"seu_token\"\n    INFLUXDB_ORG = \"my-org\"\n    os.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\n    token = os.environ.get(\"INFLUXDB_TOKEN\")\n    org = \"my-org\"",
+        "detail": "Backend.criar_tabelas",
+        "documentation": {}
+    },
+    {
         "label": "app",
         "kind": 5,
         "importPath": "Backend.main",
@@ -945,6 +1381,195 @@
         "description": "Backend.main",
         "peekOfCode": "origins = [\n    \"http://localhost\",\n    \"http://localhost:8080\",\n    \"http://127.0.0.1:5173\"\n]\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,\n    allow_credentials=True,\n    allow_methods=[\"*\"],",
         "detail": "Backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "default_settings",
+        "kind": 2,
+        "importPath": "mqtt-simulator.mqtt-simulator.main",
+        "description": "mqtt-simulator.mqtt-simulator.main",
+        "peekOfCode": "def default_settings():\n    base_folder = Path(__file__).resolve().parent.parent\n    settings_file = base_folder / 'config/settings.json'\n    return settings_file\ndef is_valid_file(parser, arg):\n    settings_file = Path(arg)\n    if not settings_file.is_file():\n        return parser.error(f\"argument -f/--file: can't open '{arg}'\")\n    return settings_file\nparser = argparse.ArgumentParser()",
+        "detail": "mqtt-simulator.mqtt-simulator.main",
+        "documentation": {}
+    },
+    {
+        "label": "is_valid_file",
+        "kind": 2,
+        "importPath": "mqtt-simulator.mqtt-simulator.main",
+        "description": "mqtt-simulator.mqtt-simulator.main",
+        "peekOfCode": "def is_valid_file(parser, arg):\n    settings_file = Path(arg)\n    if not settings_file.is_file():\n        return parser.error(f\"argument -f/--file: can't open '{arg}'\")\n    return settings_file\nparser = argparse.ArgumentParser()\nparser.add_argument('-f', '--file', dest='settings_file', type=lambda x: is_valid_file(parser, x), help='settings file', default=default_settings())\nargs = parser.parse_args()\nsimulator = Simulator(args.settings_file)\nsimulator.run()",
+        "detail": "mqtt-simulator.mqtt-simulator.main",
+        "documentation": {}
+    },
+    {
+        "label": "parser",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.main",
+        "description": "mqtt-simulator.mqtt-simulator.main",
+        "peekOfCode": "parser = argparse.ArgumentParser()\nparser.add_argument('-f', '--file', dest='settings_file', type=lambda x: is_valid_file(parser, x), help='settings file', default=default_settings())\nargs = parser.parse_args()\nsimulator = Simulator(args.settings_file)\nsimulator.run()",
+        "detail": "mqtt-simulator.mqtt-simulator.main",
+        "documentation": {}
+    },
+    {
+        "label": "args",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.main",
+        "description": "mqtt-simulator.mqtt-simulator.main",
+        "peekOfCode": "args = parser.parse_args()\nsimulator = Simulator(args.settings_file)\nsimulator.run()",
+        "detail": "mqtt-simulator.mqtt-simulator.main",
+        "documentation": {}
+    },
+    {
+        "label": "simulator",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.main",
+        "description": "mqtt-simulator.mqtt-simulator.main",
+        "peekOfCode": "simulator = Simulator(args.settings_file)\nsimulator.run()",
+        "detail": "mqtt-simulator.mqtt-simulator.main",
+        "documentation": {}
+    },
+    {
+        "label": "on_connect",
+        "kind": 2,
+        "importPath": "mqtt-simulator.mqtt-simulator.novo_script",
+        "description": "mqtt-simulator.mqtt-simulator.novo_script",
+        "peekOfCode": "def on_connect(client, userdata, flags, rc):\n    print(\"Conectado ao HiveMQ\")\n    # Inscreva-se nos tópicos com base no prefixo\n    client.subscribe(topic_prefix + \"/#\")\n# Função de callback para quando uma mensagem MQTT é recebida\ndef on_message(client, userdata, msg):\n    print(f\"Mensagem recebida - Tópico: {msg.topic}, Mensagem: {msg.payload.decode()}\")\n# Cria um cliente MQTT\nmqtt_client = mqtt.Client()\n# Define as funções de callback",
+        "detail": "mqtt-simulator.mqtt-simulator.novo_script",
+        "documentation": {}
+    },
+    {
+        "label": "on_message",
+        "kind": 2,
+        "importPath": "mqtt-simulator.mqtt-simulator.novo_script",
+        "description": "mqtt-simulator.mqtt-simulator.novo_script",
+        "peekOfCode": "def on_message(client, userdata, msg):\n    print(f\"Mensagem recebida - Tópico: {msg.topic}, Mensagem: {msg.payload.decode()}\")\n# Cria um cliente MQTT\nmqtt_client = mqtt.Client()\n# Define as funções de callback\nmqtt_client.on_connect = on_connect\nmqtt_client.on_message = on_message\n# Conecta ao HiveMQ\nmqtt_client.connect(broker_url, broker_port, 60)\n# Inicia o loop para receber mensagens MQTT",
+        "detail": "mqtt-simulator.mqtt-simulator.novo_script",
+        "documentation": {}
+    },
+    {
+        "label": "broker_url",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.novo_script",
+        "description": "mqtt-simulator.mqtt-simulator.novo_script",
+        "peekOfCode": "broker_url = \"localhost\"  # Endereço IP do HiveMQ\nbroker_port = 1883  # Porta do HiveMQ\ntopic_prefix = \"irrigation\"  # Prefixo dos tópicos a serem inscritos\n# Função de callback para quando a conexão MQTT é estabelecida\ndef on_connect(client, userdata, flags, rc):\n    print(\"Conectado ao HiveMQ\")\n    # Inscreva-se nos tópicos com base no prefixo\n    client.subscribe(topic_prefix + \"/#\")\n# Função de callback para quando uma mensagem MQTT é recebida\ndef on_message(client, userdata, msg):",
+        "detail": "mqtt-simulator.mqtt-simulator.novo_script",
+        "documentation": {}
+    },
+    {
+        "label": "broker_port",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.novo_script",
+        "description": "mqtt-simulator.mqtt-simulator.novo_script",
+        "peekOfCode": "broker_port = 1883  # Porta do HiveMQ\ntopic_prefix = \"irrigation\"  # Prefixo dos tópicos a serem inscritos\n# Função de callback para quando a conexão MQTT é estabelecida\ndef on_connect(client, userdata, flags, rc):\n    print(\"Conectado ao HiveMQ\")\n    # Inscreva-se nos tópicos com base no prefixo\n    client.subscribe(topic_prefix + \"/#\")\n# Função de callback para quando uma mensagem MQTT é recebida\ndef on_message(client, userdata, msg):\n    print(f\"Mensagem recebida - Tópico: {msg.topic}, Mensagem: {msg.payload.decode()}\")",
+        "detail": "mqtt-simulator.mqtt-simulator.novo_script",
+        "documentation": {}
+    },
+    {
+        "label": "topic_prefix",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.novo_script",
+        "description": "mqtt-simulator.mqtt-simulator.novo_script",
+        "peekOfCode": "topic_prefix = \"irrigation\"  # Prefixo dos tópicos a serem inscritos\n# Função de callback para quando a conexão MQTT é estabelecida\ndef on_connect(client, userdata, flags, rc):\n    print(\"Conectado ao HiveMQ\")\n    # Inscreva-se nos tópicos com base no prefixo\n    client.subscribe(topic_prefix + \"/#\")\n# Função de callback para quando uma mensagem MQTT é recebida\ndef on_message(client, userdata, msg):\n    print(f\"Mensagem recebida - Tópico: {msg.topic}, Mensagem: {msg.payload.decode()}\")\n# Cria um cliente MQTT",
+        "detail": "mqtt-simulator.mqtt-simulator.novo_script",
+        "documentation": {}
+    },
+    {
+        "label": "mqtt_client",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.novo_script",
+        "description": "mqtt-simulator.mqtt-simulator.novo_script",
+        "peekOfCode": "mqtt_client = mqtt.Client()\n# Define as funções de callback\nmqtt_client.on_connect = on_connect\nmqtt_client.on_message = on_message\n# Conecta ao HiveMQ\nmqtt_client.connect(broker_url, broker_port, 60)\n# Inicia o loop para receber mensagens MQTT\nmqtt_client.loop_forever()",
+        "detail": "mqtt-simulator.mqtt-simulator.novo_script",
+        "documentation": {}
+    },
+    {
+        "label": "mqtt_client.on_connect",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.novo_script",
+        "description": "mqtt-simulator.mqtt-simulator.novo_script",
+        "peekOfCode": "mqtt_client.on_connect = on_connect\nmqtt_client.on_message = on_message\n# Conecta ao HiveMQ\nmqtt_client.connect(broker_url, broker_port, 60)\n# Inicia o loop para receber mensagens MQTT\nmqtt_client.loop_forever()",
+        "detail": "mqtt-simulator.mqtt-simulator.novo_script",
+        "documentation": {}
+    },
+    {
+        "label": "mqtt_client.on_message",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.novo_script",
+        "description": "mqtt-simulator.mqtt-simulator.novo_script",
+        "peekOfCode": "mqtt_client.on_message = on_message\n# Conecta ao HiveMQ\nmqtt_client.connect(broker_url, broker_port, 60)\n# Inicia o loop para receber mensagens MQTT\nmqtt_client.loop_forever()",
+        "detail": "mqtt-simulator.mqtt-simulator.novo_script",
+        "documentation": {}
+    },
+    {
+        "label": "Simulator",
+        "kind": 6,
+        "importPath": "mqtt-simulator.mqtt-simulator.simulator",
+        "description": "mqtt-simulator.mqtt-simulator.simulator",
+        "peekOfCode": "class Simulator:\n    def __init__(self, settings_file):\n        self.broker_url = None\n        self.broker_port = None\n        self.topics = []\n        self.load_settings(settings_file)\n    def load_settings(self, settings_file):\n        with open(settings_file) as json_file:\n            config = json.load(json_file)\n            self.broker_url = config['BROKER_URL']",
+        "detail": "mqtt-simulator.mqtt-simulator.simulator",
+        "documentation": {}
+    },
+    {
+        "label": "on_connect",
+        "kind": 2,
+        "importPath": "mqtt-simulator.mqtt-simulator.teste",
+        "description": "mqtt-simulator.mqtt-simulator.teste",
+        "peekOfCode": "def on_connect(client, userdata, flags, rc):\n    print(\"Connected with result code \"+str(rc))\n    # Subscribing in on_connect() means that if we lose the connection and\n    # reconnect then subscriptions will be renewed.\n    client.subscribe(\"temp/#\")\n# The callback for when a PUBLISH message is received from the server.\ndef on_message(client, userdata, msg):\n    print(msg.topic+\" \"+str(msg.payload))\nclient = mqtt.Client()\nclient.on_connect = on_connect",
+        "detail": "mqtt-simulator.mqtt-simulator.teste",
+        "documentation": {}
+    },
+    {
+        "label": "on_message",
+        "kind": 2,
+        "importPath": "mqtt-simulator.mqtt-simulator.teste",
+        "description": "mqtt-simulator.mqtt-simulator.teste",
+        "peekOfCode": "def on_message(client, userdata, msg):\n    print(msg.topic+\" \"+str(msg.payload))\nclient = mqtt.Client()\nclient.on_connect = on_connect\nclient.on_message = on_message\nclient.connect(\"localhost\", 1883, 60)\n# Blocking call that processes network traffic, dispatches callbacks and\n# handles reconnecting.\n# Other loop*() functions are available that give a threaded interface and a\n# manual interface.",
+        "detail": "mqtt-simulator.mqtt-simulator.teste",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.teste",
+        "description": "mqtt-simulator.mqtt-simulator.teste",
+        "peekOfCode": "client = mqtt.Client()\nclient.on_connect = on_connect\nclient.on_message = on_message\nclient.connect(\"localhost\", 1883, 60)\n# Blocking call that processes network traffic, dispatches callbacks and\n# handles reconnecting.\n# Other loop*() functions are available that give a threaded interface and a\n# manual interface.\nclient.loop_forever()",
+        "detail": "mqtt-simulator.mqtt-simulator.teste",
+        "documentation": {}
+    },
+    {
+        "label": "client.on_connect",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.teste",
+        "description": "mqtt-simulator.mqtt-simulator.teste",
+        "peekOfCode": "client.on_connect = on_connect\nclient.on_message = on_message\nclient.connect(\"localhost\", 1883, 60)\n# Blocking call that processes network traffic, dispatches callbacks and\n# handles reconnecting.\n# Other loop*() functions are available that give a threaded interface and a\n# manual interface.\nclient.loop_forever()",
+        "detail": "mqtt-simulator.mqtt-simulator.teste",
+        "documentation": {}
+    },
+    {
+        "label": "client.on_message",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.teste",
+        "description": "mqtt-simulator.mqtt-simulator.teste",
+        "peekOfCode": "client.on_message = on_message\nclient.connect(\"localhost\", 1883, 60)\n# Blocking call that processes network traffic, dispatches callbacks and\n# handles reconnecting.\n# Other loop*() functions are available that give a threaded interface and a\n# manual interface.\nclient.loop_forever()",
+        "detail": "mqtt-simulator.mqtt-simulator.teste",
+        "documentation": {}
+    },
+    {
+        "label": "Topic",
+        "kind": 6,
+        "importPath": "mqtt-simulator.mqtt-simulator.topic",
+        "description": "mqtt-simulator.mqtt-simulator.topic",
+        "peekOfCode": "class Topic(ABC):\n    def __init__(self, broker_url, broker_port, topic_url, topic_data, retain_probability):\n        self.broker_url = broker_url\n        self.broker_port = broker_port\n        self.topic_url = topic_url\n        self.topic_data = topic_data\n        self.retain_probability = retain_probability\n        self.client = None\n    def connect(self):\n        self.client = mqtt.Client(self.topic_url, clean_session=True, transport='tcp')",
+        "detail": "mqtt-simulator.mqtt-simulator.topic",
+        "documentation": {}
+    },
+    {
+        "label": "TopicAuto",
+        "kind": 6,
+        "importPath": "mqtt-simulator.mqtt-simulator.topic",
+        "description": "mqtt-simulator.mqtt-simulator.topic",
+        "peekOfCode": "class TopicAuto(Topic, threading.Thread):\n    def __init__(self, broker_url, broker_port, topic_url, topic_data, retain_probability, time_interval):\n        Topic.__init__(self, broker_url, broker_port, topic_url, topic_data, retain_probability)\n        threading.Thread.__init__(self, args=(), kwargs=None)\n        self.time_interval = time_interval\n        self.old_payload = None\n    def run(self):\n        self.connect()\n        while True:\n            payload = self.generate_data()",
+        "detail": "mqtt-simulator.mqtt-simulator.topic",
         "documentation": {}
     }
 ]
