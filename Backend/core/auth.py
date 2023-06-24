@@ -1,3 +1,4 @@
+import api.v1.endpoints
 from jose import jwt
 from datetime import datetime, timedelta
 from fastapi import HTTPException, status, Depends
@@ -55,7 +56,7 @@ async def get_current_user(token: str = Depends(oauth2_scheme)):
         query = 'from(bucket: "Usuarios") |> range(start: -1d) |> limit(n: 10)'
         result = client.query_api().query(org=org, query=query)
 
-        data = []
+        data = []        
         for table in result:
             for record in table.records:
                 if record.values["email"] == usuario_id:
