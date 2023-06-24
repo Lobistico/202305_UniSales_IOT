@@ -41,7 +41,7 @@ router = APIRouter(dependencies=[Depends(get_current_user)])
 # router = APIRouter()
 routerLogin = APIRouter()
 
-@router.post('/signup', status_code=status.HTTP_201_CREATED)
+@routerLogin.post('/signup', status_code=status.HTTP_201_CREATED)
 async def post_usuario(usuario: UsuarioSchemaCreate):
     query = 'from(bucket: "Usuarios") |> range(start: -1d) |> limit(n: 10)'
     result = client.query_api().query(org=org, query=query)

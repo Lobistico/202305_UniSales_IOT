@@ -961,7 +961,7 @@
         "kind": 5,
         "importPath": "api.v1.endpoints.usuario",
         "description": "api.v1.endpoints.usuario",
-        "peekOfCode": "os.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@router.post('/signup', status_code=status.HTTP_201_CREATED)",
+        "peekOfCode": "os.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@routerLogin.post('/signup', status_code=status.HTTP_201_CREATED)",
         "detail": "api.v1.endpoints.usuario",
         "documentation": {}
     },
@@ -970,7 +970,7 @@
         "kind": 5,
         "importPath": "api.v1.endpoints.usuario",
         "description": "api.v1.endpoints.usuario",
-        "peekOfCode": "token = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@router.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):",
+        "peekOfCode": "token = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@routerLogin.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):",
         "detail": "api.v1.endpoints.usuario",
         "documentation": {}
     },
@@ -979,7 +979,7 @@
         "kind": 5,
         "importPath": "api.v1.endpoints.usuario",
         "description": "api.v1.endpoints.usuario",
-        "peekOfCode": "org = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@router.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    query = 'from(bucket: \"Usuarios\") |> range(start: -1d) |> limit(n: 10)'",
+        "peekOfCode": "org = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@routerLogin.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    query = 'from(bucket: \"Usuarios\") |> range(start: -1d) |> limit(n: 10)'",
         "detail": "api.v1.endpoints.usuario",
         "documentation": {}
     },
@@ -988,7 +988,7 @@
         "kind": 5,
         "importPath": "api.v1.endpoints.usuario",
         "description": "api.v1.endpoints.usuario",
-        "peekOfCode": "url = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@router.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    query = 'from(bucket: \"Usuarios\") |> range(start: -1d) |> limit(n: 10)'\n    result = client.query_api().query(org=org, query=query)",
+        "peekOfCode": "url = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@routerLogin.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    query = 'from(bucket: \"Usuarios\") |> range(start: -1d) |> limit(n: 10)'\n    result = client.query_api().query(org=org, query=query)",
         "detail": "api.v1.endpoints.usuario",
         "documentation": {}
     },
@@ -997,7 +997,7 @@
         "kind": 5,
         "importPath": "api.v1.endpoints.usuario",
         "description": "api.v1.endpoints.usuario",
-        "peekOfCode": "client = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@router.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    query = 'from(bucket: \"Usuarios\") |> range(start: -1d) |> limit(n: 10)'\n    result = client.query_api().query(org=org, query=query)\n    data = []",
+        "peekOfCode": "client = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@routerLogin.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    query = 'from(bucket: \"Usuarios\") |> range(start: -1d) |> limit(n: 10)'\n    result = client.query_api().query(org=org, query=query)\n    data = []",
         "detail": "api.v1.endpoints.usuario",
         "documentation": {}
     },
@@ -1006,7 +1006,7 @@
         "kind": 5,
         "importPath": "api.v1.endpoints.usuario",
         "description": "api.v1.endpoints.usuario",
-        "peekOfCode": "client = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@router.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    query = 'from(bucket: \"Usuarios\") |> range(start: -1d) |> limit(n: 10)'\n    result = client.query_api().query(org=org, query=query)\n    data = []\n    for table in result:",
+        "peekOfCode": "client = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@routerLogin.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    query = 'from(bucket: \"Usuarios\") |> range(start: -1d) |> limit(n: 10)'\n    result = client.query_api().query(org=org, query=query)\n    data = []\n    for table in result:",
         "detail": "api.v1.endpoints.usuario",
         "documentation": {}
     },
@@ -1015,7 +1015,7 @@
         "kind": 5,
         "importPath": "api.v1.endpoints.usuario",
         "description": "api.v1.endpoints.usuario",
-        "peekOfCode": "router = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@router.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    query = 'from(bucket: \"Usuarios\") |> range(start: -1d) |> limit(n: 10)'\n    result = client.query_api().query(org=org, query=query)\n    data = []\n    for table in result:\n        for record in table.records:",
+        "peekOfCode": "router = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@routerLogin.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    query = 'from(bucket: \"Usuarios\") |> range(start: -1d) |> limit(n: 10)'\n    result = client.query_api().query(org=org, query=query)\n    data = []\n    for table in result:\n        for record in table.records:",
         "detail": "api.v1.endpoints.usuario",
         "documentation": {}
     },
@@ -1024,7 +1024,7 @@
         "kind": 5,
         "importPath": "api.v1.endpoints.usuario",
         "description": "api.v1.endpoints.usuario",
-        "peekOfCode": "routerLogin = APIRouter()\n@router.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    query = 'from(bucket: \"Usuarios\") |> range(start: -1d) |> limit(n: 10)'\n    result = client.query_api().query(org=org, query=query)\n    data = []\n    for table in result:\n        for record in table.records:\n            if record.values[\"email\"] == usuario.email:\n                data.append(record.values)",
+        "peekOfCode": "routerLogin = APIRouter()\n@routerLogin.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    query = 'from(bucket: \"Usuarios\") |> range(start: -1d) |> limit(n: 10)'\n    result = client.query_api().query(org=org, query=query)\n    data = []\n    for table in result:\n        for record in table.records:\n            if record.values[\"email\"] == usuario.email:\n                data.append(record.values)",
         "detail": "api.v1.endpoints.usuario",
         "documentation": {}
     },
