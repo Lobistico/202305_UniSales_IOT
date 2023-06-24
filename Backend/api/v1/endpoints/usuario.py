@@ -23,28 +23,15 @@ from influxdb_client.client.write_api import SYNCHRONOUS
 import influxdb_client, os, time
 
 
-bucket="Usuarios"
-INFLUXDB_TOKEN = "167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=="
-INFLUXDB_URL = "http://localhost:8086"
-INFLUXDB_TOKEN = "seu_token"
-INFLUXDB_ORG = "my-org"
-os.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='
-token = os.environ.get("INFLUXDB_TOKEN")
-org = "my-org"
-url = "http://localhost:8086"
-client = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)
-client = InfluxDBClient(url=url, token=token, org=org)
-  
-
-
+BUCKET="Usuarios"
+client = InfluxDBClient(url=settings.INFLUXDB_URL, token=settings.INFLUXDB_TOKEN, org=settings.INFLUXDB_ORG)
 router = APIRouter(dependencies=[Depends(get_current_user)])
-# router = APIRouter()
 routerLogin = APIRouter()
 
 @routerLogin.post('/signup', status_code=status.HTTP_201_CREATED)
 async def post_usuario(usuario: UsuarioSchemaCreate):
     query = 'from(bucket: "Usuarios") |> range(start: -1d) |> limit(n: 10)'
-    result = client.query_api().query(org=org, query=query)
+    result = client.query_api().query(org=settings.INFLUXDB_ORG, query=query)
     
     data = []
     for table in result:
@@ -57,7 +44,7 @@ async def post_usuario(usuario: UsuarioSchemaCreate):
         try:
             write_api = client.write_api(write_options=SYNCHRONOUS)
             point = Point("usuário").tag("email", usuario.email).tag("nome", usuario.nome).field("senha", gerar_hash_senha(usuario.senha))
-            write_api.write(bucket=bucket, org=org, record=point)
+            write_api.write(bucket=BUCKET, org=settings.INFLUXDB_ORG, record=point)
         except IntegrityError:
             raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail='Não foi possivel criar novo usuário')
         
@@ -72,7 +59,7 @@ async def me(usuario = Depends(get_current_user)):
 @routerLogin.post('/login')
 async def autentica_user(OAuth2PasswordRequestForm: OAuth2PasswordRequestForm = Depends()):
     query = 'from(bucket: "Usuarios") |> range(start: -1d) |> limit(n: 10)'
-    result = client.query_api().query(org=org, query=query)
+    result = client.query_api().query(org=settings.INFLUXDB_ORG, query=query)
     
     data = []
     for table in result:
@@ -91,7 +78,7 @@ async def autentica_user(OAuth2PasswordRequestForm: OAuth2PasswordRequestForm = 
 @router.get('/')
 async def get_usuarios(db: AsyncSession = Depends(get_session), usuarioLogado = Depends(get_current_user)):
     query = 'from(bucket: "Usuarios") |> range(start: -1d) |> limit(n: 10)'
-    result = client.query_api().query(org=org, query=query)
+    result = client.query_api().query(org=settings.INFLUXDB_ORG, query=query)
 
     data = []
     for table in result:

@@ -8,15 +8,13 @@ from sqlalchemy.orm import declarative_base
 class Settings(BaseSettings):
     API_V1: str = '/api/v1'
     DB_URL: str = 'mysql+asyncmy://root:root@localhost/seed?charset=utf8mb4'
-    DBBaseModel = declarative_base()
+    BUCKET: str ="Usuarios"
+    DBBaseModel: str = declarative_base()
 
-    os.environ['INFLUXDB_TOKEN'] = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'
-
-    token = os.environ.get("INFLUXDB_TOKEN")
-    org = "my-org"
-    url = "http://localhost:8086"
-
-    write_client = influxdb_client.InfluxDBClient(url=url, token=token, org=org)
+    INFLUXDB_TOKEN: str = "167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=="
+    INFLUXDB_URL: str = "http://localhost:8086"
+    INFLUXDB_ORG: str = "my-org"
+    
 
 
 
