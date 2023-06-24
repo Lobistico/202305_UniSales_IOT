@@ -2,6 +2,9 @@ import paho.mqtt.client as mqtt
 import argparse
 from pathlib import Path
 from simulator import Simulator
+from datetime import datetime
+from influxdb_client import InfluxDBClient, Point, WritePrecision
+import json
 
 # Configurações do MQTT
 broker_url = "localhost"  # Endereço IP do HiveMQ
@@ -61,39 +64,41 @@ parser.add_argument(
 )
 args = parser.parse_args()
 
-# INFLUX DB
-import influxdb_client
-import os
-import time
-from influxdb_client import InfluxDBClient, Point, WritePrecision
-from influxdb_client.client.write_api import SYNCHRONOUS
+# Lê as configurações do JSON
+with open(args.settings_file) as json_file:
+    config = json.load(json_file)
 
-token = "pCEvuFp9aKDrFFXPKbTDQUN80BLtemqAmHoxpW7lR4md-ZUmcdlIp4IH8Nq-E_U-pu3didUA-FK4T907DSG7-Q=="
-org = "my-org"
-url = "http://localhost:8086"
+influx_config = config["INFLUX_DB"]
+url = influx_config["URL"]
+token = influx_config["TOKEN"]
+org = influx_config["ORG"]
+bucket = influx_config["BUCKET"]
 
-write_client = influxdb_client.InfluxDBClient(url=url, token=token, org=org)
-bucket = "irrigation"
+# Cria o ponto de dados
+point = Point("weatherstation")
+point.tag("location", "San Francisco")
 
-write_api = write_client.write_api(write_options=SYNCHRONOUS)
+# Adiciona os campos ao ponto de dados com base nas configurações do JSON
+for data in influx_config["DATA"]:
+    field_name = data["NAME"]
+    field_type = data["TYPE"]
+    field_value = None
 
-for value in range(5):
-    point = Point("measurement1").tag("tagname1", "tagvalue1").field("field1", value)
-    write_api.write(bucket=bucket, org=org, record=point)
-    time.sleep(1)  # separate points by 1 second
+    if field_type == "bool":
+        field_value = True
+    elif field_type == "int":
+        min_value = data.get("MIN_VALUE", 0)
+        max_value = data.get("MAX_VALUE", 100)
+        field_value = (
+            25.9  # Substitua pelo valor adequado ou aplique a lógica necessária
+        )
+        # Verifique se há uma configuração de passo máximo e aplique-a, se necessário
 
-query_api = write_client.query_api()
+    point.field(field_name, field_value)
 
-query = """from(bucket: "irrigation")
- |> range(start: -10m)
- |> filter(fn: (r) => r._measurement == "measurement1")"""
-tables = query_api.query(query, org="my-org")
+point.time(datetime.utcnow(), WritePrecision.MS)
 
-for table in tables:
-    for record in table.records:
-        print(record)
+# Cria o cliente do InfluxDB
+client = InfluxDBClient(url=url, token=token, org=org)
 
-
-# Inicia o simulador com as configurações fornecidas
-simulator = Simulator(args.settings_file)
-simulator.run()
+# Grava o ponto de dados
