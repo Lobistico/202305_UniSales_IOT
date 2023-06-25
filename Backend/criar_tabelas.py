@@ -16,20 +16,9 @@ async def create_tables():
 def testeInfluxDb():
     import os
     bucket="Usuarios"
-    INFLUXDB_TOKEN = "167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=="
-    INFLUXDB_URL = "http://localhost:8086"
-    INFLUXDB_TOKEN = "seu_token"
-    INFLUXDB_ORG = "my-org"
-
-    os.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='
-
-    token = os.environ.get("INFLUXDB_TOKEN")
-    org = "my-org"
-    url = "http://localhost:8086"
-    client = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)
 
     # Criação do cliente InfluxDB
-    client = InfluxDBClient(url=url, token=token, org=org)
+    client = InfluxDBClient(url=settings.INFLUXDB_URL, token=settings.INFLUXDB_TOKEN, org=settings.INFLUXDB_ORG)
 
     # Criação do WriteApi
     write_api = client.write_api(write_options=SYNCHRONOUS)
@@ -42,7 +31,7 @@ def testeInfluxDb():
     point = Point("usuário").tag("email", email).field("senha", senha)
 
     # Gravação do ponto de dados no InfluxDB
-    write_api.write(bucket=bucket, org=org, record=point)
+    write_api.write(bucket=bucket, org=settings.INFLUXDB_ORG, record=point)
 
 
 

@@ -17,11 +17,27 @@
         "documentation": {}
     },
     {
+        "label": "plantacao",
+        "importPath": "api.v1.endpoints",
+        "description": "api.v1.endpoints",
+        "isExtraImport": true,
+        "detail": "api.v1.endpoints",
+        "documentation": {}
+    },
+    {
         "label": "fastapi.security",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "fastapi.security",
         "description": "fastapi.security",
+        "detail": "fastapi.security",
+        "documentation": {}
+    },
+    {
+        "label": "OAuth2PasswordRequestForm",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
+        "isExtraImport": true,
         "detail": "fastapi.security",
         "documentation": {}
     },
@@ -107,6 +123,14 @@
         "documentation": {}
     },
     {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Generator",
         "importPath": "typing",
         "description": "typing",
@@ -152,6 +176,70 @@
         "description": "typing",
         "isExtraImport": true,
         "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "UploadFile",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Form",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
         "documentation": {}
     },
     {
@@ -291,11 +379,27 @@
         "documentation": {}
     },
     {
+        "label": "FileResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
         "label": "sqlalchemy.ext.asyncio",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "sqlalchemy.ext.asyncio",
         "description": "sqlalchemy.ext.asyncio",
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
         "detail": "sqlalchemy.ext.asyncio",
         "documentation": {}
     },
@@ -396,11 +500,11 @@
         "documentation": {}
     },
     {
-        "label": "UsuarioModel",
-        "importPath": "models.usuario_model",
-        "description": "models.usuario_model",
+        "label": "select",
+        "importPath": "sqlalchemy.future",
+        "description": "sqlalchemy.future",
         "isExtraImport": true,
-        "detail": "models.usuario_model",
+        "detail": "sqlalchemy.future",
         "documentation": {}
     },
     {
@@ -425,6 +529,30 @@
         "description": "models.usuario_model",
         "isExtraImport": true,
         "detail": "models.usuario_model",
+        "documentation": {}
+    },
+    {
+        "label": "UsuarioModel",
+        "importPath": "models.usuario_model",
+        "description": "models.usuario_model",
+        "isExtraImport": true,
+        "detail": "models.usuario_model",
+        "documentation": {}
+    },
+    {
+        "label": "UsuarioModel",
+        "importPath": "models.usuario_model",
+        "description": "models.usuario_model",
+        "isExtraImport": true,
+        "detail": "models.usuario_model",
+        "documentation": {}
+    },
+    {
+        "label": "get_session",
+        "importPath": "core.deps",
+        "description": "core.deps",
+        "isExtraImport": true,
+        "detail": "core.deps",
         "documentation": {}
     },
     {
@@ -476,11 +604,35 @@
         "documentation": {}
     },
     {
+        "label": "comparar_senha",
+        "importPath": "core.security",
+        "description": "core.security",
+        "isExtraImport": true,
+        "detail": "core.security",
+        "documentation": {}
+    },
+    {
+        "label": "gerar_hash_senha",
+        "importPath": "core.security",
+        "description": "core.security",
+        "isExtraImport": true,
+        "detail": "core.security",
+        "documentation": {}
+    },
+    {
         "label": "datetime",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "datetime",
         "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
         "detail": "datetime",
         "documentation": {}
     },
@@ -541,6 +693,14 @@
         "documentation": {}
     },
     {
+        "label": "IntegrityError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
         "label": "*",
         "importPath": "schemas.usuario_schema",
         "description": "schemas.usuario_schema",
@@ -554,6 +714,30 @@
         "description": "schemas.usuario_schema",
         "isExtraImport": true,
         "detail": "schemas.usuario_schema",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "schemas.usuario_schema",
+        "description": "schemas.usuario_schema",
+        "isExtraImport": true,
+        "detail": "schemas.usuario_schema",
+        "documentation": {}
+    },
+    {
+        "label": "criar_acess_token",
+        "importPath": "core.auth",
+        "description": "core.auth",
+        "isExtraImport": true,
+        "detail": "core.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "core.auth",
+        "description": "core.auth",
+        "isExtraImport": true,
+        "detail": "core.auth",
         "documentation": {}
     },
     {
@@ -628,6 +812,22 @@
         "description": "core.configs",
         "isExtraImport": true,
         "detail": "core.configs",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "core.configs",
+        "description": "core.configs",
+        "isExtraImport": true,
+        "detail": "core.configs",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "importPath": "core.database",
+        "description": "core.database",
+        "isExtraImport": true,
+        "detail": "core.database",
         "documentation": {}
     },
     {
@@ -756,6 +956,38 @@
         "description": "influxdb_client",
         "isExtraImport": true,
         "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "InfluxDBClient",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "Point",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "WritePrecision",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "SYNCHRONOUS",
+        "importPath": "influxdb_client.client.write_api",
+        "description": "influxdb_client.client.write_api",
+        "isExtraImport": true,
+        "detail": "influxdb_client.client.write_api",
         "documentation": {}
     },
     {
@@ -923,6 +1155,105 @@
     {
         "label": "INFLUXDB_TOKEN",
         "kind": 5,
+        "importPath": "api.v1.endpoints.plantacao",
+        "description": "api.v1.endpoints.plantacao",
+        "peekOfCode": "INFLUXDB_TOKEN = \"167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg==\"\nINFLUXDB_URL = \"http://localhost:8086\"\nINFLUXDB_TOKEN = \"seu_token\"\nINFLUXDB_ORG = \"my-org\"\nos.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)",
+        "detail": "api.v1.endpoints.plantacao",
+        "documentation": {}
+    },
+    {
+        "label": "INFLUXDB_URL",
+        "kind": 5,
+        "importPath": "api.v1.endpoints.plantacao",
+        "description": "api.v1.endpoints.plantacao",
+        "peekOfCode": "INFLUXDB_URL = \"http://localhost:8086\"\nINFLUXDB_TOKEN = \"seu_token\"\nINFLUXDB_ORG = \"my-org\"\nos.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])",
+        "detail": "api.v1.endpoints.plantacao",
+        "documentation": {}
+    },
+    {
+        "label": "INFLUXDB_TOKEN",
+        "kind": 5,
+        "importPath": "api.v1.endpoints.plantacao",
+        "description": "api.v1.endpoints.plantacao",
+        "peekOfCode": "INFLUXDB_TOKEN = \"seu_token\"\nINFLUXDB_ORG = \"my-org\"\nos.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n@router.post('/', status_code=status.HTTP_201_CREATED)",
+        "detail": "api.v1.endpoints.plantacao",
+        "documentation": {}
+    },
+    {
+        "label": "INFLUXDB_ORG",
+        "kind": 5,
+        "importPath": "api.v1.endpoints.plantacao",
+        "description": "api.v1.endpoints.plantacao",
+        "peekOfCode": "INFLUXDB_ORG = \"my-org\"\nos.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n@router.post('/', status_code=status.HTTP_201_CREATED)\nasync def post_usuario():",
+        "detail": "api.v1.endpoints.plantacao",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ['INFLUXDB_TOKEN']",
+        "kind": 5,
+        "importPath": "api.v1.endpoints.plantacao",
+        "description": "api.v1.endpoints.plantacao",
+        "peekOfCode": "os.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n@router.post('/', status_code=status.HTTP_201_CREATED)\nasync def post_usuario():\n    return 'plantacao post'",
+        "detail": "api.v1.endpoints.plantacao",
+        "documentation": {}
+    },
+    {
+        "label": "token",
+        "kind": 5,
+        "importPath": "api.v1.endpoints.plantacao",
+        "description": "api.v1.endpoints.plantacao",
+        "peekOfCode": "token = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n@router.post('/', status_code=status.HTTP_201_CREATED)\nasync def post_usuario():\n    return 'plantacao post'\n@router.get('/')",
+        "detail": "api.v1.endpoints.plantacao",
+        "documentation": {}
+    },
+    {
+        "label": "org",
+        "kind": 5,
+        "importPath": "api.v1.endpoints.plantacao",
+        "description": "api.v1.endpoints.plantacao",
+        "peekOfCode": "org = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n@router.post('/', status_code=status.HTTP_201_CREATED)\nasync def post_usuario():\n    return 'plantacao post'\n@router.get('/')\nasync def getAll():",
+        "detail": "api.v1.endpoints.plantacao",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "api.v1.endpoints.plantacao",
+        "description": "api.v1.endpoints.plantacao",
+        "peekOfCode": "url = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n@router.post('/', status_code=status.HTTP_201_CREATED)\nasync def post_usuario():\n    return 'plantacao post'\n@router.get('/')\nasync def getAll():\n    return 'plantacao get tudo'",
+        "detail": "api.v1.endpoints.plantacao",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "api.v1.endpoints.plantacao",
+        "description": "api.v1.endpoints.plantacao",
+        "peekOfCode": "client = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n@router.post('/', status_code=status.HTTP_201_CREATED)\nasync def post_usuario():\n    return 'plantacao post'\n@router.get('/')\nasync def getAll():\n    return 'plantacao get tudo'\n@router.get('/{id}')",
+        "detail": "api.v1.endpoints.plantacao",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "api.v1.endpoints.plantacao",
+        "description": "api.v1.endpoints.plantacao",
+        "peekOfCode": "client = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n@router.post('/', status_code=status.HTTP_201_CREATED)\nasync def post_usuario():\n    return 'plantacao post'\n@router.get('/')\nasync def getAll():\n    return 'plantacao get tudo'\n@router.get('/{id}')\nasync def getById():",
+        "detail": "api.v1.endpoints.plantacao",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "api.v1.endpoints.plantacao",
+        "description": "api.v1.endpoints.plantacao",
+        "peekOfCode": "router = APIRouter(dependencies=[Depends(get_current_user)])\n@router.post('/', status_code=status.HTTP_201_CREATED)\nasync def post_usuario():\n    return 'plantacao post'\n@router.get('/')\nasync def getAll():\n    return 'plantacao get tudo'\n@router.get('/{id}')\nasync def getById():\n    return 'plantacao get por id {id}'",
+        "detail": "api.v1.endpoints.plantacao",
+        "documentation": {}
+    },
+    {
+        "label": "INFLUXDB_TOKEN",
+        "kind": 5,
         "importPath": "api.v1.endpoints.usuario",
         "description": "api.v1.endpoints.usuario",
         "peekOfCode": "INFLUXDB_TOKEN = \"167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg==\"\nINFLUXDB_URL = \"http://localhost:8086\"\nINFLUXDB_TOKEN = \"seu_token\"\nINFLUXDB_ORG = \"my-org\"\nos.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)",
@@ -1033,7 +1364,7 @@
         "kind": 5,
         "importPath": "api.v1.api",
         "description": "api.v1.api",
-        "peekOfCode": "api_router = APIRouter()\napi_router.include_router(usuario.router, prefix='/usuarios', tags=['usuarios'])\napi_router.include_router(usuario.routerLogin, prefix='/usuarios', tags=['usuarios'])",
+        "peekOfCode": "api_router = APIRouter()\napi_router.include_router(usuario.router, prefix='/usuarios', tags=['usuarios'])\napi_router.include_router(plantacao.router, prefix='/plantacao', tags=['plantacao'])\napi_router.include_router(usuario.routerLogin, prefix='/usuarios', tags=['usuarios'])",
         "detail": "api.v1.api",
         "documentation": {}
     },

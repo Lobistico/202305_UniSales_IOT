@@ -17,11 +17,27 @@
         "documentation": {}
     },
     {
+        "label": "plantacao",
+        "importPath": "api.v1.endpoints",
+        "description": "api.v1.endpoints",
+        "isExtraImport": true,
+        "detail": "api.v1.endpoints",
+        "documentation": {}
+    },
+    {
         "label": "fastapi.security",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "fastapi.security",
         "description": "fastapi.security",
+        "detail": "fastapi.security",
+        "documentation": {}
+    },
+    {
+        "label": "OAuth2PasswordRequestForm",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
+        "isExtraImport": true,
         "detail": "fastapi.security",
         "documentation": {}
     },
@@ -107,6 +123,14 @@
         "documentation": {}
     },
     {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Generator",
         "importPath": "typing",
         "description": "typing",
@@ -152,6 +176,70 @@
         "description": "typing",
         "isExtraImport": true,
         "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "UploadFile",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Form",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
         "documentation": {}
     },
     {
@@ -291,11 +379,27 @@
         "documentation": {}
     },
     {
+        "label": "FileResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
         "label": "sqlalchemy.ext.asyncio",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "sqlalchemy.ext.asyncio",
         "description": "sqlalchemy.ext.asyncio",
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
         "detail": "sqlalchemy.ext.asyncio",
         "documentation": {}
     },
@@ -396,11 +500,11 @@
         "documentation": {}
     },
     {
-        "label": "UsuarioModel",
-        "importPath": "models.usuario_model",
-        "description": "models.usuario_model",
+        "label": "select",
+        "importPath": "sqlalchemy.future",
+        "description": "sqlalchemy.future",
         "isExtraImport": true,
-        "detail": "models.usuario_model",
+        "detail": "sqlalchemy.future",
         "documentation": {}
     },
     {
@@ -425,6 +529,30 @@
         "description": "models.usuario_model",
         "isExtraImport": true,
         "detail": "models.usuario_model",
+        "documentation": {}
+    },
+    {
+        "label": "UsuarioModel",
+        "importPath": "models.usuario_model",
+        "description": "models.usuario_model",
+        "isExtraImport": true,
+        "detail": "models.usuario_model",
+        "documentation": {}
+    },
+    {
+        "label": "UsuarioModel",
+        "importPath": "models.usuario_model",
+        "description": "models.usuario_model",
+        "isExtraImport": true,
+        "detail": "models.usuario_model",
+        "documentation": {}
+    },
+    {
+        "label": "get_session",
+        "importPath": "core.deps",
+        "description": "core.deps",
+        "isExtraImport": true,
+        "detail": "core.deps",
         "documentation": {}
     },
     {
@@ -476,11 +604,35 @@
         "documentation": {}
     },
     {
+        "label": "comparar_senha",
+        "importPath": "core.security",
+        "description": "core.security",
+        "isExtraImport": true,
+        "detail": "core.security",
+        "documentation": {}
+    },
+    {
+        "label": "gerar_hash_senha",
+        "importPath": "core.security",
+        "description": "core.security",
+        "isExtraImport": true,
+        "detail": "core.security",
+        "documentation": {}
+    },
+    {
         "label": "datetime",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "datetime",
         "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
         "detail": "datetime",
         "documentation": {}
     },
@@ -541,6 +693,14 @@
         "documentation": {}
     },
     {
+        "label": "IntegrityError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
         "label": "*",
         "importPath": "schemas.usuario_schema",
         "description": "schemas.usuario_schema",
@@ -554,6 +714,30 @@
         "description": "schemas.usuario_schema",
         "isExtraImport": true,
         "detail": "schemas.usuario_schema",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "schemas.usuario_schema",
+        "description": "schemas.usuario_schema",
+        "isExtraImport": true,
+        "detail": "schemas.usuario_schema",
+        "documentation": {}
+    },
+    {
+        "label": "criar_acess_token",
+        "importPath": "core.auth",
+        "description": "core.auth",
+        "isExtraImport": true,
+        "detail": "core.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "core.auth",
+        "description": "core.auth",
+        "isExtraImport": true,
+        "detail": "core.auth",
         "documentation": {}
     },
     {
@@ -628,6 +812,30 @@
         "description": "core.configs",
         "isExtraImport": true,
         "detail": "core.configs",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "core.configs",
+        "description": "core.configs",
+        "isExtraImport": true,
+        "detail": "core.configs",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "core.configs",
+        "description": "core.configs",
+        "isExtraImport": true,
+        "detail": "core.configs",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "importPath": "core.database",
+        "description": "core.database",
+        "isExtraImport": true,
+        "detail": "core.database",
         "documentation": {}
     },
     {
@@ -756,6 +964,38 @@
         "description": "influxdb_client",
         "isExtraImport": true,
         "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "InfluxDBClient",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "Point",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "WritePrecision",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "SYNCHRONOUS",
+        "importPath": "influxdb_client.client.write_api",
+        "description": "influxdb_client.client.write_api",
+        "isExtraImport": true,
+        "detail": "influxdb_client.client.write_api",
         "documentation": {}
     },
     {
@@ -1015,75 +1255,21 @@
         "documentation": {}
     },
     {
-        "label": "INFLUXDB_TOKEN",
+        "label": "client",
         "kind": 5,
-        "importPath": "Backend.api.v1.endpoints.usuario",
-        "description": "Backend.api.v1.endpoints.usuario",
-        "peekOfCode": "INFLUXDB_TOKEN = \"167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg==\"\nINFLUXDB_URL = \"http://localhost:8086\"\nINFLUXDB_TOKEN = \"seu_token\"\nINFLUXDB_ORG = \"my-org\"\nos.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)",
-        "detail": "Backend.api.v1.endpoints.usuario",
+        "importPath": "Backend.api.v1.endpoints.plantacao",
+        "description": "Backend.api.v1.endpoints.plantacao",
+        "peekOfCode": "client = InfluxDBClient(url=settings.INFLUXDB_URL, token=settings.INFLUXDB_TOKEN, org=settings.INFLUXDB_ORG)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n@router.post('/', status_code=status.HTTP_201_CREATED)\nasync def post_usuario():\n    return 'plantacao post'\n@router.get('/')\nasync def getAll():\n    return 'plantacao get tudo'\n@router.get('/{id}')\nasync def getById():",
+        "detail": "Backend.api.v1.endpoints.plantacao",
         "documentation": {}
     },
     {
-        "label": "INFLUXDB_URL",
+        "label": "router",
         "kind": 5,
-        "importPath": "Backend.api.v1.endpoints.usuario",
-        "description": "Backend.api.v1.endpoints.usuario",
-        "peekOfCode": "INFLUXDB_URL = \"http://localhost:8086\"\nINFLUXDB_TOKEN = \"seu_token\"\nINFLUXDB_ORG = \"my-org\"\nos.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])",
-        "detail": "Backend.api.v1.endpoints.usuario",
-        "documentation": {}
-    },
-    {
-        "label": "INFLUXDB_TOKEN",
-        "kind": 5,
-        "importPath": "Backend.api.v1.endpoints.usuario",
-        "description": "Backend.api.v1.endpoints.usuario",
-        "peekOfCode": "INFLUXDB_TOKEN = \"seu_token\"\nINFLUXDB_ORG = \"my-org\"\nos.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()",
-        "detail": "Backend.api.v1.endpoints.usuario",
-        "documentation": {}
-    },
-    {
-        "label": "INFLUXDB_ORG",
-        "kind": 5,
-        "importPath": "Backend.api.v1.endpoints.usuario",
-        "description": "Backend.api.v1.endpoints.usuario",
-        "peekOfCode": "INFLUXDB_ORG = \"my-org\"\nos.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()",
-        "detail": "Backend.api.v1.endpoints.usuario",
-        "documentation": {}
-    },
-    {
-        "label": "os.environ['INFLUXDB_TOKEN']",
-        "kind": 5,
-        "importPath": "Backend.api.v1.endpoints.usuario",
-        "description": "Backend.api.v1.endpoints.usuario",
-        "peekOfCode": "os.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@router.post('/signup', status_code=status.HTTP_201_CREATED)",
-        "detail": "Backend.api.v1.endpoints.usuario",
-        "documentation": {}
-    },
-    {
-        "label": "token",
-        "kind": 5,
-        "importPath": "Backend.api.v1.endpoints.usuario",
-        "description": "Backend.api.v1.endpoints.usuario",
-        "peekOfCode": "token = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@router.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):",
-        "detail": "Backend.api.v1.endpoints.usuario",
-        "documentation": {}
-    },
-    {
-        "label": "org",
-        "kind": 5,
-        "importPath": "Backend.api.v1.endpoints.usuario",
-        "description": "Backend.api.v1.endpoints.usuario",
-        "peekOfCode": "org = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@router.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    try:",
-        "detail": "Backend.api.v1.endpoints.usuario",
-        "documentation": {}
-    },
-    {
-        "label": "url",
-        "kind": 5,
-        "importPath": "Backend.api.v1.endpoints.usuario",
-        "description": "Backend.api.v1.endpoints.usuario",
-        "peekOfCode": "url = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@router.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    try:\n        write_api = client.write_api(write_options=SYNCHRONOUS)",
-        "detail": "Backend.api.v1.endpoints.usuario",
+        "importPath": "Backend.api.v1.endpoints.plantacao",
+        "description": "Backend.api.v1.endpoints.plantacao",
+        "peekOfCode": "router = APIRouter(dependencies=[Depends(get_current_user)])\n@router.post('/', status_code=status.HTTP_201_CREATED)\nasync def post_usuario():\n    return 'plantacao post'\n@router.get('/')\nasync def getAll():\n    return 'plantacao get tudo'\n@router.get('/{id}')\nasync def getById():\n    return 'plantacao get por id {id}'",
+        "detail": "Backend.api.v1.endpoints.plantacao",
         "documentation": {}
     },
     {
@@ -1091,16 +1277,7 @@
         "kind": 5,
         "importPath": "Backend.api.v1.endpoints.usuario",
         "description": "Backend.api.v1.endpoints.usuario",
-        "peekOfCode": "client = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@router.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    try:\n        write_api = client.write_api(write_options=SYNCHRONOUS)\n        point = Point(\"usuário\").tag(\"email\", usuario.email).field(\"senha\", gerar_hash_senha(usuario.senha))",
-        "detail": "Backend.api.v1.endpoints.usuario",
-        "documentation": {}
-    },
-    {
-        "label": "client",
-        "kind": 5,
-        "importPath": "Backend.api.v1.endpoints.usuario",
-        "description": "Backend.api.v1.endpoints.usuario",
-        "peekOfCode": "client = InfluxDBClient(url=url, token=token, org=org)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@router.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    try:\n        write_api = client.write_api(write_options=SYNCHRONOUS)\n        point = Point(\"usuário\").tag(\"email\", usuario.email).field(\"senha\", gerar_hash_senha(usuario.senha))\n        write_api.write(bucket=bucket, org=org, record=point)",
+        "peekOfCode": "client = InfluxDBClient(url=settings.INFLUXDB_URL, token=settings.INFLUXDB_TOKEN, org=settings.INFLUXDB_ORG)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\nrouterLogin = APIRouter()\n@routerLogin.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    query = 'from(bucket: \"Usuarios\") |> range(start: -1d) |> limit(n: 10)'\n    result = client.query_api().query(org=settings.INFLUXDB_ORG, query=query)\n    data = []\n    for table in result:\n        for record in table.records:",
         "detail": "Backend.api.v1.endpoints.usuario",
         "documentation": {}
     },
@@ -1109,7 +1286,7 @@
         "kind": 5,
         "importPath": "Backend.api.v1.endpoints.usuario",
         "description": "Backend.api.v1.endpoints.usuario",
-        "peekOfCode": "router = APIRouter(dependencies=[Depends(get_current_user)])\n# router = APIRouter()\nrouterLogin = APIRouter()\n@router.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    try:\n        write_api = client.write_api(write_options=SYNCHRONOUS)\n        point = Point(\"usuário\").tag(\"email\", usuario.email).field(\"senha\", gerar_hash_senha(usuario.senha))\n        write_api.write(bucket=bucket, org=org, record=point)\n    except IntegrityError:",
+        "peekOfCode": "router = APIRouter(dependencies=[Depends(get_current_user)])\nrouterLogin = APIRouter()\n@routerLogin.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    query = 'from(bucket: \"Usuarios\") |> range(start: -1d) |> limit(n: 10)'\n    result = client.query_api().query(org=settings.INFLUXDB_ORG, query=query)\n    data = []\n    for table in result:\n        for record in table.records:\n            if record.values[\"email\"] == usuario.email:",
         "detail": "Backend.api.v1.endpoints.usuario",
         "documentation": {}
     },
@@ -1118,7 +1295,7 @@
         "kind": 5,
         "importPath": "Backend.api.v1.endpoints.usuario",
         "description": "Backend.api.v1.endpoints.usuario",
-        "peekOfCode": "routerLogin = APIRouter()\n@router.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    try:\n        write_api = client.write_api(write_options=SYNCHRONOUS)\n        point = Point(\"usuário\").tag(\"email\", usuario.email).field(\"senha\", gerar_hash_senha(usuario.senha))\n        write_api.write(bucket=bucket, org=org, record=point)\n    except IntegrityError:\n        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail='Não foi possivel criar novo usuário')\n    return usuario",
+        "peekOfCode": "routerLogin = APIRouter()\n@routerLogin.post('/signup', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(usuario: UsuarioSchemaCreate):\n    query = 'from(bucket: \"Usuarios\") |> range(start: -1d) |> limit(n: 10)'\n    result = client.query_api().query(org=settings.INFLUXDB_ORG, query=query)\n    data = []\n    for table in result:\n        for record in table.records:\n            if record.values[\"email\"] == usuario.email:\n                data.append(record.values)",
         "detail": "Backend.api.v1.endpoints.usuario",
         "documentation": {}
     },
@@ -1127,7 +1304,7 @@
         "kind": 5,
         "importPath": "Backend.api.v1.api",
         "description": "Backend.api.v1.api",
-        "peekOfCode": "api_router = APIRouter()\napi_router.include_router(usuario.router, prefix='/usuarios', tags=['usuarios'])\napi_router.include_router(usuario.routerLogin, prefix='/usuarios', tags=['usuarios'])",
+        "peekOfCode": "api_router = APIRouter()\napi_router.include_router(usuario.router, prefix='/usuarios', tags=['usuarios'])\napi_router.include_router(plantacao.router, prefix='/plantacao', tags=['plantacao'])\napi_router.include_router(usuario.routerLogin, prefix='/usuarios', tags=['usuarios'])",
         "detail": "Backend.api.v1.api",
         "documentation": {}
     },
@@ -1141,92 +1318,11 @@
         "documentation": {}
     },
     {
-        "label": "INFLUXDB_TOKEN",
-        "kind": 5,
-        "importPath": "Backend.core.auth",
-        "description": "Backend.core.auth",
-        "peekOfCode": "INFLUXDB_TOKEN = \"167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg==\"\nINFLUXDB_URL = \"http://localhost:8086\"\nINFLUXDB_TOKEN = \"seu_token\"\nINFLUXDB_ORG = \"my-org\"\nos.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)",
-        "detail": "Backend.core.auth",
-        "documentation": {}
-    },
-    {
-        "label": "INFLUXDB_URL",
-        "kind": 5,
-        "importPath": "Backend.core.auth",
-        "description": "Backend.core.auth",
-        "peekOfCode": "INFLUXDB_URL = \"http://localhost:8086\"\nINFLUXDB_TOKEN = \"seu_token\"\nINFLUXDB_ORG = \"my-org\"\nos.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'",
-        "detail": "Backend.core.auth",
-        "documentation": {}
-    },
-    {
-        "label": "INFLUXDB_TOKEN",
-        "kind": 5,
-        "importPath": "Backend.core.auth",
-        "description": "Backend.core.auth",
-        "peekOfCode": "INFLUXDB_TOKEN = \"seu_token\"\nINFLUXDB_ORG = \"my-org\"\nos.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'",
-        "detail": "Backend.core.auth",
-        "documentation": {}
-    },
-    {
-        "label": "INFLUXDB_ORG",
-        "kind": 5,
-        "importPath": "Backend.core.auth",
-        "description": "Backend.core.auth",
-        "peekOfCode": "INFLUXDB_ORG = \"my-org\"\nos.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'\nEXPIRES_IN_MIN = 60*24*7",
-        "detail": "Backend.core.auth",
-        "documentation": {}
-    },
-    {
-        "label": "os.environ['INFLUXDB_TOKEN']",
-        "kind": 5,
-        "importPath": "Backend.core.auth",
-        "description": "Backend.core.auth",
-        "peekOfCode": "os.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'\nEXPIRES_IN_MIN = 60*24*7\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/api/v1/usuarios/login\")",
-        "detail": "Backend.core.auth",
-        "documentation": {}
-    },
-    {
-        "label": "token",
-        "kind": 5,
-        "importPath": "Backend.core.auth",
-        "description": "Backend.core.auth",
-        "peekOfCode": "token = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'\nEXPIRES_IN_MIN = 60*24*7\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/api/v1/usuarios/login\")\ndef criar_acess_token(usuario_id: str):",
-        "detail": "Backend.core.auth",
-        "documentation": {}
-    },
-    {
-        "label": "org",
-        "kind": 5,
-        "importPath": "Backend.core.auth",
-        "description": "Backend.core.auth",
-        "peekOfCode": "org = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'\nEXPIRES_IN_MIN = 60*24*7\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/api/v1/usuarios/login\")\ndef criar_acess_token(usuario_id: str):\n    expiracao = str(datetime.utcnow() + timedelta(EXPIRES_IN_MIN))",
-        "detail": "Backend.core.auth",
-        "documentation": {}
-    },
-    {
-        "label": "url",
-        "kind": 5,
-        "importPath": "Backend.core.auth",
-        "description": "Backend.core.auth",
-        "peekOfCode": "url = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'\nEXPIRES_IN_MIN = 60*24*7\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/api/v1/usuarios/login\")\ndef criar_acess_token(usuario_id: str):\n    expiracao = str(datetime.utcnow() + timedelta(EXPIRES_IN_MIN))\n    payload = {",
-        "detail": "Backend.core.auth",
-        "documentation": {}
-    },
-    {
         "label": "client",
         "kind": 5,
         "importPath": "Backend.core.auth",
         "description": "Backend.core.auth",
-        "peekOfCode": "client = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'\nEXPIRES_IN_MIN = 60*24*7\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/api/v1/usuarios/login\")\ndef criar_acess_token(usuario_id: str):\n    expiracao = str(datetime.utcnow() + timedelta(EXPIRES_IN_MIN))\n    payload = {\n        'sub': usuario_id,",
-        "detail": "Backend.core.auth",
-        "documentation": {}
-    },
-    {
-        "label": "client",
-        "kind": 5,
-        "importPath": "Backend.core.auth",
-        "description": "Backend.core.auth",
-        "peekOfCode": "client = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'\nEXPIRES_IN_MIN = 60*24*7\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/api/v1/usuarios/login\")\ndef criar_acess_token(usuario_id: str):\n    expiracao = str(datetime.utcnow() + timedelta(EXPIRES_IN_MIN))\n    payload = {\n        'sub': usuario_id,\n        'ext': expiracao",
+        "peekOfCode": "client = InfluxDBClient(url=settings.INFLUXDB_URL, token=settings.INFLUXDB_TOKEN, org=settings.INFLUXDB_ORG)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'\nEXPIRES_IN_MIN = 60*24*7\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/api/v1/usuarios/login\")\ndef criar_acess_token(usuario_id: str):\n    expiracao = str(datetime.utcnow() + timedelta(EXPIRES_IN_MIN))\n    payload = {\n        'sub': usuario_id,\n        'ext': expiracao",
         "detail": "Backend.core.auth",
         "documentation": {}
     },
@@ -1253,7 +1349,7 @@
         "kind": 6,
         "importPath": "Backend.core.configs",
         "description": "Backend.core.configs",
-        "peekOfCode": "class Settings(BaseSettings):\n    API_V1: str = '/api/v1'\n    DB_URL: str = 'mysql+asyncmy://root:root@localhost/seed?charset=utf8mb4'\n    DBBaseModel = declarative_base()\n    os.environ['INFLUXDB_TOKEN'] = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\n    token = os.environ.get(\"INFLUXDB_TOKEN\")\n    org = \"my-org\"\n    url = \"http://localhost:8086\"\n    write_client = influxdb_client.InfluxDBClient(url=url, token=token, org=org)\n    class Config:",
+        "peekOfCode": "class Settings(BaseSettings):\n    API_V1: str = '/api/v1'\n    DB_URL: str = 'mysql+asyncmy://root:root@localhost/seed?charset=utf8mb4'\n    BUCKET: str =\"Usuarios\"\n    DBBaseModel: str = declarative_base()\n    INFLUXDB_TOKEN: str = \"167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg==\"\n    INFLUXDB_URL: str = \"http://localhost:8086\"\n    INFLUXDB_ORG: str = \"my-org\"\n    class Config:\n        case_sensitive: True",
         "detail": "Backend.core.configs",
         "documentation": {}
     },
@@ -1361,7 +1457,7 @@
         "kind": 2,
         "importPath": "Backend.criar_tabelas",
         "description": "Backend.criar_tabelas",
-        "peekOfCode": "def testeInfluxDb():\n    import os\n    bucket=\"Usuarios\"\n    INFLUXDB_TOKEN = \"167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg==\"\n    INFLUXDB_URL = \"http://localhost:8086\"\n    INFLUXDB_TOKEN = \"seu_token\"\n    INFLUXDB_ORG = \"my-org\"\n    os.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\n    token = os.environ.get(\"INFLUXDB_TOKEN\")\n    org = \"my-org\"",
+        "peekOfCode": "def testeInfluxDb():\n    import os\n    bucket=\"Usuarios\"\n    # Criação do cliente InfluxDB\n    client = InfluxDBClient(url=settings.INFLUXDB_URL, token=settings.INFLUXDB_TOKEN, org=settings.INFLUXDB_ORG)\n    # Criação do WriteApi\n    write_api = client.write_api(write_options=SYNCHRONOUS)\n    # Dados do usuário\n    email = \"root@root.com\"\n    senha = \"$2b$12$O4fqRQV.jT/oBD6WagmJa.PqYro8L/LYwy4otTz506UPUXiysGtgC\"",
         "detail": "Backend.criar_tabelas",
         "documentation": {}
     },
