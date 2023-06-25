@@ -45,9 +45,9 @@ async def post_usuario(usuario: UsuarioSchemaCreate):
     else:   
         try:
             
-            dir = os.path.abspath(f"./assets/image/{usuario.imagem}")
+            
             write_api = client.write_api(write_options=SYNCHRONOUS)
-            point = Point("usuário").tag("email", usuario.email).tag("nome", usuario.nome).tag("imagem", dir).field("senha", gerar_hash_senha(usuario.senha))
+            point = Point("usuário").tag("email", usuario.email).tag("nome", usuario.nome).tag("imagem", usuario.imagem).field("senha", gerar_hash_senha(usuario.senha))
             write_api.write(bucket=BUCKET, org=settings.INFLUXDB_ORG, record=point)
         except IntegrityError:
             raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail='Não foi possivel criar novo usuário')
