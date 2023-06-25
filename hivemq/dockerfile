@@ -1,0 +1,17 @@
+FROM hivemq/hivemq4
+
+# Instale o curl
+RUN apt-get update && apt-get install -y curl
+
+# Baixe o arquivo de extensão do HiveMQ InfluxDB
+RUN curl -L -o /opt/hivemq/extensions/hivemq-influxdb-extension.zip \
+    https://github.com/hivemq/hivemq-influxdb-extension/releases/download/4.1.2/hivemq-influxdb-extension-4.1.2.zip
+
+# Descompacte a extensão
+RUN unzip /opt/hivemq/extensions/hivemq-influxdb-extension.zip -d /opt/hivemq/extensions
+
+# Exponha a porta MQTT
+EXPOSE 1883
+
+# Execute o HiveMQ
+CMD ["/opt/hivemq/bin/run.sh"]
