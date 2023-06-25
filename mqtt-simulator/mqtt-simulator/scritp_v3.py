@@ -12,7 +12,7 @@ broker_port = 1883  # Porta do HiveMQ
 topic_prefix = "irrigation"  # Prefixo dos tópicos a serem inscritos
 
 # Configurações do InfluxDB
-token = "pCEvuFp9aKDrFFXPKbTDQUN80BLtemqAmHoxpW7lR4md-ZUmcdlIp4IH8Nq-E_U-pu3didUA-FK4T907DSG7-Q=="
+token = "6NOxnIEyVHUeJa4nnxTBfP6aBBWAAYVHCaE8Z4Uo3KBd41IezYLIwOZajbxikfg-p5bG3PgDCyd0VfpRD3HnzQ=="
 org = "my-org"
 url = "http://localhost:8086"
 bucket = "irrigation"

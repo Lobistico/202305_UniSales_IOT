@@ -243,6 +243,14 @@
         "documentation": {}
     },
     {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "APIRouter",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -1412,7 +1420,7 @@
         "kind": 5,
         "importPath": "Backend.api.v1.endpoints.plantacao",
         "description": "Backend.api.v1.endpoints.plantacao",
-        "peekOfCode": "client = InfluxDBClient(url=settings.INFLUXDB_URL, token=settings.INFLUXDB_TOKEN, org=settings.INFLUXDB_ORG)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n@router.post('/', status_code=status.HTTP_201_CREATED)\nasync def post_usuario():\n    return 'plantacao post'\n@router.get('/')\nasync def getAll():\n    query = 'from(bucket: \"irrigation\") |> range(start: -1d) |> limit(n: 10)'\n    result = client.query_api().query(org=settings.INFLUXDB_ORG, query=query)\n    data = []",
+        "peekOfCode": "client = InfluxDBClient(url=settings.INFLUXDB_URL, token=settings.INFLUXDB_TOKEN, org=settings.INFLUXDB_ORG)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# @router.post('/', status_code=status.HTTP_201_CREATED)\n# async def post_usuario():\n#     return 'plantacao post'\n@router.get('/')\nasync def getAll():\n    query = 'from(bucket: \"irrigation\") |> range(start: -1d) |> limit(n: 10)'\n    result = client.query_api().query(org=settings.INFLUXDB_ORG, query=query)\n    data = []",
         "detail": "Backend.api.v1.endpoints.plantacao",
         "documentation": {}
     },
@@ -1421,7 +1429,7 @@
         "kind": 5,
         "importPath": "Backend.api.v1.endpoints.plantacao",
         "description": "Backend.api.v1.endpoints.plantacao",
-        "peekOfCode": "router = APIRouter(dependencies=[Depends(get_current_user)])\n@router.post('/', status_code=status.HTTP_201_CREATED)\nasync def post_usuario():\n    return 'plantacao post'\n@router.get('/')\nasync def getAll():\n    query = 'from(bucket: \"irrigation\") |> range(start: -1d) |> limit(n: 10)'\n    result = client.query_api().query(org=settings.INFLUXDB_ORG, query=query)\n    data = []\n    for table in result:",
+        "peekOfCode": "router = APIRouter(dependencies=[Depends(get_current_user)])\n# @router.post('/', status_code=status.HTTP_201_CREATED)\n# async def post_usuario():\n#     return 'plantacao post'\n@router.get('/')\nasync def getAll():\n    query = 'from(bucket: \"irrigation\") |> range(start: -1d) |> limit(n: 10)'\n    result = client.query_api().query(org=settings.INFLUXDB_ORG, query=query)\n    data = []\n    for table in result:",
         "detail": "Backend.api.v1.endpoints.plantacao",
         "documentation": {}
     },
@@ -2168,7 +2176,7 @@
         "kind": 5,
         "importPath": "mqtt-simulator.mqtt-simulator.scritp_v3",
         "description": "mqtt-simulator.mqtt-simulator.scritp_v3",
-        "peekOfCode": "broker_url = \"localhost\"  # Endereço IP do HiveMQ\nbroker_port = 1883  # Porta do HiveMQ\ntopic_prefix = \"irrigation\"  # Prefixo dos tópicos a serem inscritos\n# Configurações do InfluxDB\ntoken = \"pCEvuFp9aKDrFFXPKbTDQUN80BLtemqAmHoxpW7lR4md-ZUmcdlIp4IH8Nq-E_U-pu3didUA-FK4T907DSG7-Q==\"\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nbucket = \"irrigation\"\n# Função de callback para quando a conexão MQTT é estabelecida\ndef on_connect(client, userdata, flags, rc):",
+        "peekOfCode": "broker_url = \"localhost\"  # Endereço IP do HiveMQ\nbroker_port = 1883  # Porta do HiveMQ\ntopic_prefix = \"irrigation\"  # Prefixo dos tópicos a serem inscritos\n# Configurações do InfluxDB\ntoken = \"6NOxnIEyVHUeJa4nnxTBfP6aBBWAAYVHCaE8Z4Uo3KBd41IezYLIwOZajbxikfg-p5bG3PgDCyd0VfpRD3HnzQ==\"\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nbucket = \"irrigation\"\n# Função de callback para quando a conexão MQTT é estabelecida\ndef on_connect(client, userdata, flags, rc):",
         "detail": "mqtt-simulator.mqtt-simulator.scritp_v3",
         "documentation": {}
     },
@@ -2177,7 +2185,7 @@
         "kind": 5,
         "importPath": "mqtt-simulator.mqtt-simulator.scritp_v3",
         "description": "mqtt-simulator.mqtt-simulator.scritp_v3",
-        "peekOfCode": "broker_port = 1883  # Porta do HiveMQ\ntopic_prefix = \"irrigation\"  # Prefixo dos tópicos a serem inscritos\n# Configurações do InfluxDB\ntoken = \"pCEvuFp9aKDrFFXPKbTDQUN80BLtemqAmHoxpW7lR4md-ZUmcdlIp4IH8Nq-E_U-pu3didUA-FK4T907DSG7-Q==\"\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nbucket = \"irrigation\"\n# Função de callback para quando a conexão MQTT é estabelecida\ndef on_connect(client, userdata, flags, rc):\n    print(\"Conectado ao HiveMQ\")",
+        "peekOfCode": "broker_port = 1883  # Porta do HiveMQ\ntopic_prefix = \"irrigation\"  # Prefixo dos tópicos a serem inscritos\n# Configurações do InfluxDB\ntoken = \"6NOxnIEyVHUeJa4nnxTBfP6aBBWAAYVHCaE8Z4Uo3KBd41IezYLIwOZajbxikfg-p5bG3PgDCyd0VfpRD3HnzQ==\"\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nbucket = \"irrigation\"\n# Função de callback para quando a conexão MQTT é estabelecida\ndef on_connect(client, userdata, flags, rc):\n    print(\"Conectado ao HiveMQ\")",
         "detail": "mqtt-simulator.mqtt-simulator.scritp_v3",
         "documentation": {}
     },
@@ -2186,7 +2194,7 @@
         "kind": 5,
         "importPath": "mqtt-simulator.mqtt-simulator.scritp_v3",
         "description": "mqtt-simulator.mqtt-simulator.scritp_v3",
-        "peekOfCode": "topic_prefix = \"irrigation\"  # Prefixo dos tópicos a serem inscritos\n# Configurações do InfluxDB\ntoken = \"pCEvuFp9aKDrFFXPKbTDQUN80BLtemqAmHoxpW7lR4md-ZUmcdlIp4IH8Nq-E_U-pu3didUA-FK4T907DSG7-Q==\"\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nbucket = \"irrigation\"\n# Função de callback para quando a conexão MQTT é estabelecida\ndef on_connect(client, userdata, flags, rc):\n    print(\"Conectado ao HiveMQ\")\n    # Inscreva-se nos tópicos com base no prefixo",
+        "peekOfCode": "topic_prefix = \"irrigation\"  # Prefixo dos tópicos a serem inscritos\n# Configurações do InfluxDB\ntoken = \"6NOxnIEyVHUeJa4nnxTBfP6aBBWAAYVHCaE8Z4Uo3KBd41IezYLIwOZajbxikfg-p5bG3PgDCyd0VfpRD3HnzQ==\"\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nbucket = \"irrigation\"\n# Função de callback para quando a conexão MQTT é estabelecida\ndef on_connect(client, userdata, flags, rc):\n    print(\"Conectado ao HiveMQ\")\n    # Inscreva-se nos tópicos com base no prefixo",
         "detail": "mqtt-simulator.mqtt-simulator.scritp_v3",
         "documentation": {}
     },
@@ -2195,7 +2203,7 @@
         "kind": 5,
         "importPath": "mqtt-simulator.mqtt-simulator.scritp_v3",
         "description": "mqtt-simulator.mqtt-simulator.scritp_v3",
-        "peekOfCode": "token = \"pCEvuFp9aKDrFFXPKbTDQUN80BLtemqAmHoxpW7lR4md-ZUmcdlIp4IH8Nq-E_U-pu3didUA-FK4T907DSG7-Q==\"\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nbucket = \"irrigation\"\n# Função de callback para quando a conexão MQTT é estabelecida\ndef on_connect(client, userdata, flags, rc):\n    print(\"Conectado ao HiveMQ\")\n    # Inscreva-se nos tópicos com base no prefixo\n    client.subscribe(topic_prefix + \"/#\")\n# Função de callback para quando uma mensagem MQTT é recebida",
+        "peekOfCode": "token = \"6NOxnIEyVHUeJa4nnxTBfP6aBBWAAYVHCaE8Z4Uo3KBd41IezYLIwOZajbxikfg-p5bG3PgDCyd0VfpRD3HnzQ==\"\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nbucket = \"irrigation\"\n# Função de callback para quando a conexão MQTT é estabelecida\ndef on_connect(client, userdata, flags, rc):\n    print(\"Conectado ao HiveMQ\")\n    # Inscreva-se nos tópicos com base no prefixo\n    client.subscribe(topic_prefix + \"/#\")\n# Função de callback para quando uma mensagem MQTT é recebida",
         "detail": "mqtt-simulator.mqtt-simulator.scritp_v3",
         "documentation": {}
     },
