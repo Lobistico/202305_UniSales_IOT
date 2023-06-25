@@ -44,8 +44,6 @@ async def post_usuario(usuario: UsuarioSchemaCreate):
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail='Já existe um usuario com este email')
     else:   
         try:
-            
-            
             write_api = client.write_api(write_options=SYNCHRONOUS)
             point = Point("usuário").tag("email", usuario.email).tag("nome", usuario.nome).tag("imagem", usuario.imagem).field("senha", gerar_hash_senha(usuario.senha))
             write_api.write(bucket=BUCKET, org=settings.INFLUXDB_ORG, record=point)
@@ -71,7 +69,7 @@ async def autentica_user(OAuth2PasswordRequestForm: OAuth2PasswordRequestForm = 
             if record.values["email"] == OAuth2PasswordRequestForm.username and comparar_senha(OAuth2PasswordRequestForm.password, record.values["_value"]):
                 data.append(record.values)
     if data:
-        token = criar_acess_token(str(record.values["email"]))
+        token = criar_acess_token(OAuth2PasswordRequestForm.username)
         return {
             "access_token": token,
             "token_type": "bearer"
