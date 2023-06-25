@@ -11,22 +11,14 @@ from sqlalchemy.future import select
 from core.deps import get_session
 from schemas.usuario_schema import *
 from jose.exceptions import JWTError
+from core.configs import settings
 
 from influxdb_client import InfluxDBClient, Point, WritePrecision
 from influxdb_client.client.write_api import SYNCHRONOUS
 import influxdb_client, os, time
 
 bucket="Usuarios"
-INFLUXDB_TOKEN = "167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=="
-INFLUXDB_URL = "http://localhost:8086"
-INFLUXDB_TOKEN = "seu_token"
-INFLUXDB_ORG = "my-org"
-os.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='
-token = os.environ.get("INFLUXDB_TOKEN")
-org = "my-org"
-url = "http://localhost:8086"
-client = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)
-client = InfluxDBClient(url=url, token=token, org=org)
+client = InfluxDBClient(url=settings.INFLUXDB_URL, token=settings.INFLUXDB_TOKEN, org=settings.INFLUXDB_ORG)
 
 SECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'
 ALGORITH: str = 'HS256'
@@ -54,7 +46,7 @@ async def get_current_user(token: str = Depends(oauth2_scheme)):
         usuario_id: str = payload.get('sub')
 
         query = 'from(bucket: "Usuarios") |> range(start: -1d) |> limit(n: 10)'
-        result = client.query_api().query(org=org, query=query)
+        result = client.query_api().query(org=settings.INFLUXDB_ORG, query=query)
 
         data = []        
         for table in result:
