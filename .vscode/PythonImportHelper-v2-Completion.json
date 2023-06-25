@@ -741,6 +741,14 @@
         "documentation": {}
     },
     {
+        "label": "*",
+        "importPath": "schemas.plantacao",
+        "description": "schemas.plantacao",
+        "isExtraImport": true,
+        "detail": "schemas.plantacao",
+        "documentation": {}
+    },
+    {
         "label": "criar_acess_token",
         "importPath": "core.auth",
         "description": "core.auth",
@@ -1241,14 +1249,6 @@
         "documentation": {}
     },
     {
-        "label": "TarefaSchema",
-        "importPath": "schemas.tarefa_schema",
-        "description": "schemas.tarefa_schema",
-        "isExtraImport": true,
-        "detail": "schemas.tarefa_schema",
-        "documentation": {}
-    },
-    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -1420,7 +1420,7 @@
         "kind": 5,
         "importPath": "Backend.api.v1.endpoints.plantacao",
         "description": "Backend.api.v1.endpoints.plantacao",
-        "peekOfCode": "client = InfluxDBClient(url=settings.INFLUXDB_URL, token=settings.INFLUXDB_TOKEN, org=settings.INFLUXDB_ORG)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# @router.post('/', status_code=status.HTTP_201_CREATED)\n# async def post_usuario():\n#     return 'plantacao post'\n@router.get('/relatorio/{filtro}')\nasync def getAll(request: Request, filtro:str):\n    query = f'from(bucket: \"irrigation\") |> range(start: -24h) |> filter(fn: (r) => r._measurement == \"{filtro}\")'\n    result = client.query_api().query(org=settings.INFLUXDB_ORG, query=query)\n    data = []",
+        "peekOfCode": "client = InfluxDBClient(url=settings.INFLUXDB_URL, token=settings.INFLUXDB_TOKEN, org=settings.INFLUXDB_ORG)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n@router.post('/regar', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(plantancao: Plantacao):\n    try:\n        write_api = client.write_api(write_options=SYNCHRONOUS)\n        point = Point(\"area_regada\").tag(\"regado\", plantancao.regado).field(\"nome\", plantancao.sensor)\n        write_api.write(bucket=BUCKET_AREA_REGADA, org=settings.INFLUXDB_ORG, record=point)\n        return f'Area do sensor {plantancao.sensor} esta sendo regada!'\n    except IntegrityError:",
         "detail": "Backend.api.v1.endpoints.plantacao",
         "documentation": {}
     },
@@ -1429,7 +1429,7 @@
         "kind": 5,
         "importPath": "Backend.api.v1.endpoints.plantacao",
         "description": "Backend.api.v1.endpoints.plantacao",
-        "peekOfCode": "router = APIRouter(dependencies=[Depends(get_current_user)])\n# @router.post('/', status_code=status.HTTP_201_CREATED)\n# async def post_usuario():\n#     return 'plantacao post'\n@router.get('/relatorio/{filtro}')\nasync def getAll(request: Request, filtro:str):\n    query = f'from(bucket: \"irrigation\") |> range(start: -24h) |> filter(fn: (r) => r._measurement == \"{filtro}\")'\n    result = client.query_api().query(org=settings.INFLUXDB_ORG, query=query)\n    data = []\n    for table in result:",
+        "peekOfCode": "router = APIRouter(dependencies=[Depends(get_current_user)])\n@router.post('/regar', status_code=status.HTTP_201_CREATED)\nasync def post_usuario(plantancao: Plantacao):\n    try:\n        write_api = client.write_api(write_options=SYNCHRONOUS)\n        point = Point(\"area_regada\").tag(\"regado\", plantancao.regado).field(\"nome\", plantancao.sensor)\n        write_api.write(bucket=BUCKET_AREA_REGADA, org=settings.INFLUXDB_ORG, record=point)\n        return f'Area do sensor {plantancao.sensor} esta sendo regada!'\n    except IntegrityError:\n        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail='Houve um erro interno')",
         "detail": "Backend.api.v1.endpoints.plantacao",
         "documentation": {}
     },
@@ -1560,12 +1560,12 @@
         "documentation": {}
     },
     {
-        "label": "TarefaSchema",
+        "label": "Plantacao",
         "kind": 6,
-        "importPath": "Backend.schemas.tarefa_schema",
-        "description": "Backend.schemas.tarefa_schema",
-        "peekOfCode": "class TarefaSchema(SCBaseModel):\n    id: Optional[int]\n    usuario_id: Optional[int]\n    nome: str\n    descricao: str\n    concluido: bool\n    criado_em: Optional[datetime]\n    atualizado_em: Optional[datetime]\n    class Config:\n        orm_mode = True",
-        "detail": "Backend.schemas.tarefa_schema",
+        "importPath": "Backend.schemas.plantacao",
+        "description": "Backend.schemas.plantacao",
+        "peekOfCode": "class Plantacao(SCBaseModel):\n    id: Optional[int]\n    regado: bool\n    sensor: str\n    class Config:\n        orm_mode = True",
+        "detail": "Backend.schemas.plantacao",
         "documentation": {}
     },
     {
@@ -1582,7 +1582,7 @@
         "kind": 6,
         "importPath": "Backend.schemas.usuario_schema",
         "description": "Backend.schemas.usuario_schema",
-        "peekOfCode": "class UsuarioSchemaCreate(UsuarioSchemaBase):\n    senha: str\n    class Config:\n        orm_mode = True\nclass UsuarioSchemaToken(SCBaseModel):\n    usuario: UsuarioSchemaBase\n    acess_token: str\nclass UsuarioSchemaTarefa(UsuarioSchemaBase):\n    tarefas: List[TarefaSchema]",
+        "peekOfCode": "class UsuarioSchemaCreate(UsuarioSchemaBase):\n    senha: str\n    class Config:\n        orm_mode = True\nclass UsuarioSchemaToken(SCBaseModel):\n    usuario: UsuarioSchemaBase\n    acess_token: str",
         "detail": "Backend.schemas.usuario_schema",
         "documentation": {}
     },
@@ -1591,16 +1591,7 @@
         "kind": 6,
         "importPath": "Backend.schemas.usuario_schema",
         "description": "Backend.schemas.usuario_schema",
-        "peekOfCode": "class UsuarioSchemaToken(SCBaseModel):\n    usuario: UsuarioSchemaBase\n    acess_token: str\nclass UsuarioSchemaTarefa(UsuarioSchemaBase):\n    tarefas: List[TarefaSchema]",
-        "detail": "Backend.schemas.usuario_schema",
-        "documentation": {}
-    },
-    {
-        "label": "UsuarioSchemaTarefa",
-        "kind": 6,
-        "importPath": "Backend.schemas.usuario_schema",
-        "description": "Backend.schemas.usuario_schema",
-        "peekOfCode": "class UsuarioSchemaTarefa(UsuarioSchemaBase):\n    tarefas: List[TarefaSchema]",
+        "peekOfCode": "class UsuarioSchemaToken(SCBaseModel):\n    usuario: UsuarioSchemaBase\n    acess_token: str",
         "detail": "Backend.schemas.usuario_schema",
         "documentation": {}
     },
@@ -1627,7 +1618,7 @@
         "kind": 5,
         "importPath": "Backend.main",
         "description": "Backend.main",
-        "peekOfCode": "app = FastAPI(title='API - Tarefas')\napp.include_router(api_router, prefix=settings.API_V1)\norigins = [\n    \"http://localhost\",\n    \"http://localhost:8080\",\n    \"http://127.0.0.1:5173\"\n]\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,",
+        "peekOfCode": "app = FastAPI(title='API - Tarefas')\napp.include_router(api_router, prefix=settings.API_V1)\norigins = [\n    \"http://localhost\",\n    \"http://localhost:8080\",\n    \"http://127.0.0.1:5173\",\n    \"http://127.0.0.1:3000\",\n    \"http://localhost:3000\"\n]\napp.add_middleware(",
         "detail": "Backend.main",
         "documentation": {}
     },
@@ -1636,7 +1627,7 @@
         "kind": 5,
         "importPath": "Backend.main",
         "description": "Backend.main",
-        "peekOfCode": "origins = [\n    \"http://localhost\",\n    \"http://localhost:8080\",\n    \"http://127.0.0.1:5173\"\n]\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,\n    allow_credentials=True,\n    allow_methods=[\"*\"],",
+        "peekOfCode": "origins = [\n    \"http://localhost\",\n    \"http://localhost:8080\",\n    \"http://127.0.0.1:5173\",\n    \"http://127.0.0.1:3000\",\n    \"http://localhost:3000\"\n]\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,",
         "detail": "Backend.main",
         "documentation": {}
     },
