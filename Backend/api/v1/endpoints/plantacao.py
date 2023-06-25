@@ -23,7 +23,7 @@ from influxdb_client.client.write_api import SYNCHRONOUS
 import influxdb_client, os, time
 
 
-BUCKET="Usuarios"
+BUCKET="irrigation"
 
 client = InfluxDBClient(url=settings.INFLUXDB_URL, token=settings.INFLUXDB_TOKEN, org=settings.INFLUXDB_ORG)
 router = APIRouter(dependencies=[Depends(get_current_user)])
@@ -36,8 +36,15 @@ async def post_usuario():
 
 @router.get('/')
 async def getAll():
-    return 'plantacao get tudo'
-    
+    query = 'from(bucket: "irrigation") |> range(start: -1d) |> limit(n: 10)'
+    result = client.query_api().query(org=settings.INFLUXDB_ORG, query=query)
+    data = []
+    for table in result:
+        for record in table.records:
+            data.append(record.values)
+    return data
+
+
 
 @router.get('/{id}')
 async def getById():
