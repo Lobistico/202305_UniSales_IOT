@@ -30,6 +30,7 @@ routerLogin = APIRouter()
 
 @routerLogin.post('/signup', status_code=status.HTTP_201_CREATED)
 async def post_usuario(usuario: UsuarioSchemaCreate):
+    
     query = 'from(bucket: "Usuarios") |> range(start: -1d) |> limit(n: 10)'
     result = client.query_api().query(org=settings.INFLUXDB_ORG, query=query)
     
@@ -38,17 +39,20 @@ async def post_usuario(usuario: UsuarioSchemaCreate):
         for record in table.records:
             if record.values["email"] == usuario.email:
                 data.append(record.values)
+            
     if data:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail='Já existe um usuario com este email')
     else:   
         try:
+            
+            dir = os.path.abspath(f"./assets/image/{usuario.imagem}")
             write_api = client.write_api(write_options=SYNCHRONOUS)
-            point = Point("usuário").tag("email", usuario.email).tag("nome", usuario.nome).field("senha", gerar_hash_senha(usuario.senha))
+            point = Point("usuário").tag("email", usuario.email).tag("nome", usuario.nome).tag("imagem", dir).field("senha", gerar_hash_senha(usuario.senha))
             write_api.write(bucket=BUCKET, org=settings.INFLUXDB_ORG, record=point)
         except IntegrityError:
             raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail='Não foi possivel criar novo usuário')
-        
-        return usuario
+            
+    return usuario
 
 
 @router.get('/me')

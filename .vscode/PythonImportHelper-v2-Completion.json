@@ -823,6 +823,14 @@
         "documentation": {}
     },
     {
+        "label": "settings",
+        "importPath": "core.configs",
+        "description": "core.configs",
+        "isExtraImport": true,
+        "detail": "core.configs",
+        "documentation": {}
+    },
+    {
         "label": "engine",
         "importPath": "core.database",
         "description": "core.database",
@@ -1310,92 +1318,11 @@
         "documentation": {}
     },
     {
-        "label": "INFLUXDB_TOKEN",
-        "kind": 5,
-        "importPath": "Backend.core.auth",
-        "description": "Backend.core.auth",
-        "peekOfCode": "INFLUXDB_TOKEN = \"167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg==\"\nINFLUXDB_URL = \"http://localhost:8086\"\nINFLUXDB_TOKEN = \"seu_token\"\nINFLUXDB_ORG = \"my-org\"\nos.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)",
-        "detail": "Backend.core.auth",
-        "documentation": {}
-    },
-    {
-        "label": "INFLUXDB_URL",
-        "kind": 5,
-        "importPath": "Backend.core.auth",
-        "description": "Backend.core.auth",
-        "peekOfCode": "INFLUXDB_URL = \"http://localhost:8086\"\nINFLUXDB_TOKEN = \"seu_token\"\nINFLUXDB_ORG = \"my-org\"\nos.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'",
-        "detail": "Backend.core.auth",
-        "documentation": {}
-    },
-    {
-        "label": "INFLUXDB_TOKEN",
-        "kind": 5,
-        "importPath": "Backend.core.auth",
-        "description": "Backend.core.auth",
-        "peekOfCode": "INFLUXDB_TOKEN = \"seu_token\"\nINFLUXDB_ORG = \"my-org\"\nos.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'",
-        "detail": "Backend.core.auth",
-        "documentation": {}
-    },
-    {
-        "label": "INFLUXDB_ORG",
-        "kind": 5,
-        "importPath": "Backend.core.auth",
-        "description": "Backend.core.auth",
-        "peekOfCode": "INFLUXDB_ORG = \"my-org\"\nos.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'\nEXPIRES_IN_MIN = 60*24*7",
-        "detail": "Backend.core.auth",
-        "documentation": {}
-    },
-    {
-        "label": "os.environ['INFLUXDB_TOKEN']",
-        "kind": 5,
-        "importPath": "Backend.core.auth",
-        "description": "Backend.core.auth",
-        "peekOfCode": "os.environ['INFLUXDB_TOKEN'] = '167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=='\ntoken = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'\nEXPIRES_IN_MIN = 60*24*7\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/api/v1/usuarios/login\")",
-        "detail": "Backend.core.auth",
-        "documentation": {}
-    },
-    {
-        "label": "token",
-        "kind": 5,
-        "importPath": "Backend.core.auth",
-        "description": "Backend.core.auth",
-        "peekOfCode": "token = os.environ.get(\"INFLUXDB_TOKEN\")\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'\nEXPIRES_IN_MIN = 60*24*7\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/api/v1/usuarios/login\")\ndef criar_acess_token(usuario_id: str):",
-        "detail": "Backend.core.auth",
-        "documentation": {}
-    },
-    {
-        "label": "org",
-        "kind": 5,
-        "importPath": "Backend.core.auth",
-        "description": "Backend.core.auth",
-        "peekOfCode": "org = \"my-org\"\nurl = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'\nEXPIRES_IN_MIN = 60*24*7\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/api/v1/usuarios/login\")\ndef criar_acess_token(usuario_id: str):\n    expiracao = str(datetime.utcnow() + timedelta(EXPIRES_IN_MIN))",
-        "detail": "Backend.core.auth",
-        "documentation": {}
-    },
-    {
-        "label": "url",
-        "kind": 5,
-        "importPath": "Backend.core.auth",
-        "description": "Backend.core.auth",
-        "peekOfCode": "url = \"http://localhost:8086\"\nclient = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'\nEXPIRES_IN_MIN = 60*24*7\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/api/v1/usuarios/login\")\ndef criar_acess_token(usuario_id: str):\n    expiracao = str(datetime.utcnow() + timedelta(EXPIRES_IN_MIN))\n    payload = {",
-        "detail": "Backend.core.auth",
-        "documentation": {}
-    },
-    {
         "label": "client",
         "kind": 5,
         "importPath": "Backend.core.auth",
         "description": "Backend.core.auth",
-        "peekOfCode": "client = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)\nclient = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'\nEXPIRES_IN_MIN = 60*24*7\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/api/v1/usuarios/login\")\ndef criar_acess_token(usuario_id: str):\n    expiracao = str(datetime.utcnow() + timedelta(EXPIRES_IN_MIN))\n    payload = {\n        'sub': usuario_id,",
-        "detail": "Backend.core.auth",
-        "documentation": {}
-    },
-    {
-        "label": "client",
-        "kind": 5,
-        "importPath": "Backend.core.auth",
-        "description": "Backend.core.auth",
-        "peekOfCode": "client = InfluxDBClient(url=url, token=token, org=org)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'\nEXPIRES_IN_MIN = 60*24*7\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/api/v1/usuarios/login\")\ndef criar_acess_token(usuario_id: str):\n    expiracao = str(datetime.utcnow() + timedelta(EXPIRES_IN_MIN))\n    payload = {\n        'sub': usuario_id,\n        'ext': expiracao",
+        "peekOfCode": "client = InfluxDBClient(url=settings.INFLUXDB_URL, token=settings.INFLUXDB_TOKEN, org=settings.INFLUXDB_ORG)\nSECRET_KEY: str = 'j7kUqCye2TUYwX7IsjE4Yx718l0FNbBAwKyuJ32G2es'\nALGORITH: str = 'HS256'\nEXPIRES_IN_MIN = 60*24*7\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/api/v1/usuarios/login\")\ndef criar_acess_token(usuario_id: str):\n    expiracao = str(datetime.utcnow() + timedelta(EXPIRES_IN_MIN))\n    payload = {\n        'sub': usuario_id,\n        'ext': expiracao",
         "detail": "Backend.core.auth",
         "documentation": {}
     },
