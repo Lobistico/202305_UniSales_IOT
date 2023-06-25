@@ -1,27 +1,29 @@
 {
-    "BROKER_URL": "localhost",
-    "BROKER_PORT": 1883,
-    "TOPICS": [
-        {
-            "TYPE": "multiple",
-            "PREFIX": "irrigation",
-            "RANGE_START": 1,
-            "RANGE_END": 20,
-            "TIME_INTERVAL": 5,
-            "RETAIN_PROBABILITY": 0.85,
-            "DATA": [
-                {
-                    "NAME": "on",
-                    "TYPE": "bool"
-                },
-                {
-                    "NAME": "temperature",
-                    "TYPE": "int",
-                    "MIN_VALUE": 0,
-                    "MAX_VALUE": 50,
-                    "MAX_STEP": 50
-                }
-            ]
-        }
-    ]
+	"BROKER_URL": "localhost",
+	"BROKER_PORT": 1883,
+	"TOPICS": [
+		{
+			"TYPE": "list",
+			"PREFIX": "irrigation",
+			"LIST": ["sensor_1", "sensor_2", "sensor_3"],
+			"TIME_INTERVAL": 8,
+			"RETAIN_PROBABILITY": 0.5,
+			"DATA": [
+				{
+					"NAME": "temperatura",
+					"TYPE": "float",
+					"MIN_VALUE": 15,
+					"MAX_VALUE": 50,
+					"MAX_STEP": 10
+				},
+				{
+					"NAME": "umidade",
+					"TYPE": "float",
+					"MIN_VALUE": 0.1,
+					"MAX_VALUE": 1.0,
+					"MAX_STEP": 10
+				}
+			]
+		}
+	]
 }
