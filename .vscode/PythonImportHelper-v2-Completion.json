@@ -1420,7 +1420,7 @@
         "kind": 5,
         "importPath": "Backend.api.v1.endpoints.plantacao",
         "description": "Backend.api.v1.endpoints.plantacao",
-        "peekOfCode": "client = InfluxDBClient(url=settings.INFLUXDB_URL, token=settings.INFLUXDB_TOKEN, org=settings.INFLUXDB_ORG)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# @router.post('/', status_code=status.HTTP_201_CREATED)\n# async def post_usuario():\n#     return 'plantacao post'\n@router.get('/')\nasync def getAll():\n    query = 'from(bucket: \"irrigation\") |> range(start: -1d) |> limit(n: 10)'\n    result = client.query_api().query(org=settings.INFLUXDB_ORG, query=query)\n    data = []",
+        "peekOfCode": "client = InfluxDBClient(url=settings.INFLUXDB_URL, token=settings.INFLUXDB_TOKEN, org=settings.INFLUXDB_ORG)\nrouter = APIRouter(dependencies=[Depends(get_current_user)])\n# @router.post('/', status_code=status.HTTP_201_CREATED)\n# async def post_usuario():\n#     return 'plantacao post'\n@router.get('/relatorio/{filtro}')\nasync def getAll(request: Request, filtro:str):\n    query = f'from(bucket: \"irrigation\") |> range(start: -24h) |> filter(fn: (r) => r._measurement == \"{filtro}\")'\n    result = client.query_api().query(org=settings.INFLUXDB_ORG, query=query)\n    data = []",
         "detail": "Backend.api.v1.endpoints.plantacao",
         "documentation": {}
     },
@@ -1429,7 +1429,7 @@
         "kind": 5,
         "importPath": "Backend.api.v1.endpoints.plantacao",
         "description": "Backend.api.v1.endpoints.plantacao",
-        "peekOfCode": "router = APIRouter(dependencies=[Depends(get_current_user)])\n# @router.post('/', status_code=status.HTTP_201_CREATED)\n# async def post_usuario():\n#     return 'plantacao post'\n@router.get('/')\nasync def getAll():\n    query = 'from(bucket: \"irrigation\") |> range(start: -1d) |> limit(n: 10)'\n    result = client.query_api().query(org=settings.INFLUXDB_ORG, query=query)\n    data = []\n    for table in result:",
+        "peekOfCode": "router = APIRouter(dependencies=[Depends(get_current_user)])\n# @router.post('/', status_code=status.HTTP_201_CREATED)\n# async def post_usuario():\n#     return 'plantacao post'\n@router.get('/relatorio/{filtro}')\nasync def getAll(request: Request, filtro:str):\n    query = f'from(bucket: \"irrigation\") |> range(start: -24h) |> filter(fn: (r) => r._measurement == \"{filtro}\")'\n    result = client.query_api().query(org=settings.INFLUXDB_ORG, query=query)\n    data = []\n    for table in result:",
         "detail": "Backend.api.v1.endpoints.plantacao",
         "documentation": {}
     },

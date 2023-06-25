@@ -34,11 +34,12 @@ router = APIRouter(dependencies=[Depends(get_current_user)])
 #     return 'plantacao post'
 
 
-@router.get('/')
-async def getAll():
-    query = 'from(bucket: "irrigation") |> range(start: -1d) |> limit(n: 10)'
+@router.get('/relatorio/{filtro}')
+async def getAll(request: Request, filtro:str):
+    query = f'from(bucket: "irrigation") |> range(start: -24h) |> filter(fn: (r) => r._measurement == "{filtro}")'
     result = client.query_api().query(org=settings.INFLUXDB_ORG, query=query)
     data = []
+
     for table in result:
         for record in table.records:
             data.append(record.values)
