@@ -53,7 +53,7 @@ async def get_current_user(token: str = Depends(oauth2_scheme)):
             for record in table.records:
                 if record.values["email"] == usuario_id:
                     data.append(record.values)
-        return payload
+        return data
         
     except JWTError:
         raise credentials_exception

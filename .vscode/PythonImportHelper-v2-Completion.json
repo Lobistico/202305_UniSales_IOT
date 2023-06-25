@@ -685,6 +685,14 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "IntegrityError",
         "importPath": "sqlalchemy.exc",
         "description": "sqlalchemy.exc",
@@ -871,26 +879,11 @@
         "documentation": {}
     },
     {
-        "label": "InfluxDBClient",
+        "label": "influxdb_client",
+        "kind": 6,
+        "isExtraImport": true,
         "importPath": "influxdb_client",
         "description": "influxdb_client",
-        "isExtraImport": true,
-        "detail": "influxdb_client",
-        "documentation": {}
-    },
-    {
-        "label": "Point",
-        "importPath": "influxdb_client",
-        "description": "influxdb_client",
-        "isExtraImport": true,
-        "detail": "influxdb_client",
-        "documentation": {}
-    },
-    {
-        "label": "WritePrecision",
-        "importPath": "influxdb_client",
-        "description": "influxdb_client",
-        "isExtraImport": true,
         "detail": "influxdb_client",
         "documentation": {}
     },
@@ -988,6 +981,118 @@
         "description": "influxdb_client",
         "isExtraImport": true,
         "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "InfluxDBClient",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "Point",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "WritePrecision",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "InfluxDBClient",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "Point",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "WritePrecision",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "InfluxDBClient",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "Point",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "WritePrecision",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "InfluxDBClient",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "Point",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "WritePrecision",
+        "importPath": "influxdb_client",
+        "description": "influxdb_client",
+        "isExtraImport": true,
+        "detail": "influxdb_client",
+        "documentation": {}
+    },
+    {
+        "label": "SYNCHRONOUS",
+        "importPath": "influxdb_client.client.write_api",
+        "description": "influxdb_client.client.write_api",
+        "isExtraImport": true,
+        "detail": "influxdb_client.client.write_api",
+        "documentation": {}
+    },
+    {
+        "label": "SYNCHRONOUS",
+        "importPath": "influxdb_client.client.write_api",
+        "description": "influxdb_client.client.write_api",
+        "isExtraImport": true,
+        "detail": "influxdb_client.client.write_api",
         "documentation": {}
     },
     {
@@ -1178,6 +1283,54 @@
         "documentation": {}
     },
     {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Simulator",
+        "importPath": "simulator",
+        "description": "simulator",
+        "isExtraImport": true,
+        "detail": "simulator",
+        "documentation": {}
+    },
+    {
+        "label": "Simulator",
+        "importPath": "simulator",
+        "description": "simulator",
+        "isExtraImport": true,
+        "detail": "simulator",
+        "documentation": {}
+    },
+    {
+        "label": "Simulator",
+        "importPath": "simulator",
+        "description": "simulator",
+        "isExtraImport": true,
+        "detail": "simulator",
+        "documentation": {}
+    },
+    {
         "label": "Simulator",
         "importPath": "simulator",
         "description": "simulator",
@@ -1195,6 +1348,15 @@
         "documentation": {}
     },
     {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
         "label": "json",
         "kind": 6,
         "isExtraImport": true,
@@ -1209,15 +1371,6 @@
         "description": "topic",
         "isExtraImport": true,
         "detail": "topic",
-        "documentation": {}
-    },
-    {
-        "label": "time",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "time",
-        "description": "time",
-        "detail": "time",
         "documentation": {}
     },
     {
@@ -1594,6 +1747,537 @@
         "description": "mqtt-simulator.mqtt-simulator.novo_script",
         "peekOfCode": "mqtt_client.on_message = on_message\n# Conecta ao HiveMQ\nmqtt_client.connect(broker_url, broker_port, 60)\n# Inicia o loop para receber mensagens MQTT\nmqtt_client.loop_forever()",
         "detail": "mqtt-simulator.mqtt-simulator.novo_script",
+        "documentation": {}
+    },
+    {
+        "label": "on_connect",
+        "kind": 2,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_novato",
+        "description": "mqtt-simulator.mqtt-simulator.script_novato",
+        "peekOfCode": "def on_connect(client, userdata, flags, rc):\n    print(\"Conectado ao HiveMQ\")\n    # Inscreva-se nos tópicos com base no prefixo\n    client.subscribe(topic_prefix + \"/#\")\n# Função de callback para quando uma mensagem MQTT é recebida\ndef on_message(client, userdata, msg):\n    print(f\"Mensagem recebida - Tópico: {msg.topic}, Mensagem: {msg.payload.decode()}\")\n# Função para validar o arquivo de configurações\ndef is_valid_file(parser, arg):\n    settings_file = Path(arg)",
+        "detail": "mqtt-simulator.mqtt-simulator.script_novato",
+        "documentation": {}
+    },
+    {
+        "label": "on_message",
+        "kind": 2,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_novato",
+        "description": "mqtt-simulator.mqtt-simulator.script_novato",
+        "peekOfCode": "def on_message(client, userdata, msg):\n    print(f\"Mensagem recebida - Tópico: {msg.topic}, Mensagem: {msg.payload.decode()}\")\n# Função para validar o arquivo de configurações\ndef is_valid_file(parser, arg):\n    settings_file = Path(arg)\n    if not settings_file.is_file():\n        return parser.error(f\"argument -f/--file: can't open '{arg}'\")\n    return settings_file\n# Cria um cliente MQTT\nmqtt_client = mqtt.Client()",
+        "detail": "mqtt-simulator.mqtt-simulator.script_novato",
+        "documentation": {}
+    },
+    {
+        "label": "is_valid_file",
+        "kind": 2,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_novato",
+        "description": "mqtt-simulator.mqtt-simulator.script_novato",
+        "peekOfCode": "def is_valid_file(parser, arg):\n    settings_file = Path(arg)\n    if not settings_file.is_file():\n        return parser.error(f\"argument -f/--file: can't open '{arg}'\")\n    return settings_file\n# Cria um cliente MQTT\nmqtt_client = mqtt.Client()\n# Define as funções de callback\nmqtt_client.on_connect = on_connect\nmqtt_client.on_message = on_message",
+        "detail": "mqtt-simulator.mqtt-simulator.script_novato",
+        "documentation": {}
+    },
+    {
+        "label": "default_settings",
+        "kind": 2,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_novato",
+        "description": "mqtt-simulator.mqtt-simulator.script_novato",
+        "peekOfCode": "def default_settings():\n    base_folder = Path(__file__).resolve().parent.parent\n    settings_file = base_folder / \"config/settings.json\"\n    return settings_file\nparser = argparse.ArgumentParser()\nparser.add_argument(\n    \"-f\",\n    \"--file\",\n    dest=\"settings_file\",\n    type=lambda x: is_valid_file(parser, x),",
+        "detail": "mqtt-simulator.mqtt-simulator.script_novato",
+        "documentation": {}
+    },
+    {
+        "label": "broker_url",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_novato",
+        "description": "mqtt-simulator.mqtt-simulator.script_novato",
+        "peekOfCode": "broker_url = \"localhost\"  # Endereço IP do HiveMQ\nbroker_port = 1883  # Porta do HiveMQ\ntopic_prefix = \"irrigation\"  # Prefixo dos tópicos a serem inscritos\n# Função de callback para quando a conexão MQTT é estabelecida\ndef on_connect(client, userdata, flags, rc):\n    print(\"Conectado ao HiveMQ\")\n    # Inscreva-se nos tópicos com base no prefixo\n    client.subscribe(topic_prefix + \"/#\")\n# Função de callback para quando uma mensagem MQTT é recebida\ndef on_message(client, userdata, msg):",
+        "detail": "mqtt-simulator.mqtt-simulator.script_novato",
+        "documentation": {}
+    },
+    {
+        "label": "broker_port",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_novato",
+        "description": "mqtt-simulator.mqtt-simulator.script_novato",
+        "peekOfCode": "broker_port = 1883  # Porta do HiveMQ\ntopic_prefix = \"irrigation\"  # Prefixo dos tópicos a serem inscritos\n# Função de callback para quando a conexão MQTT é estabelecida\ndef on_connect(client, userdata, flags, rc):\n    print(\"Conectado ao HiveMQ\")\n    # Inscreva-se nos tópicos com base no prefixo\n    client.subscribe(topic_prefix + \"/#\")\n# Função de callback para quando uma mensagem MQTT é recebida\ndef on_message(client, userdata, msg):\n    print(f\"Mensagem recebida - Tópico: {msg.topic}, Mensagem: {msg.payload.decode()}\")",
+        "detail": "mqtt-simulator.mqtt-simulator.script_novato",
+        "documentation": {}
+    },
+    {
+        "label": "topic_prefix",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_novato",
+        "description": "mqtt-simulator.mqtt-simulator.script_novato",
+        "peekOfCode": "topic_prefix = \"irrigation\"  # Prefixo dos tópicos a serem inscritos\n# Função de callback para quando a conexão MQTT é estabelecida\ndef on_connect(client, userdata, flags, rc):\n    print(\"Conectado ao HiveMQ\")\n    # Inscreva-se nos tópicos com base no prefixo\n    client.subscribe(topic_prefix + \"/#\")\n# Função de callback para quando uma mensagem MQTT é recebida\ndef on_message(client, userdata, msg):\n    print(f\"Mensagem recebida - Tópico: {msg.topic}, Mensagem: {msg.payload.decode()}\")\n# Função para validar o arquivo de configurações",
+        "detail": "mqtt-simulator.mqtt-simulator.script_novato",
+        "documentation": {}
+    },
+    {
+        "label": "mqtt_client",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_novato",
+        "description": "mqtt-simulator.mqtt-simulator.script_novato",
+        "peekOfCode": "mqtt_client = mqtt.Client()\n# Define as funções de callback\nmqtt_client.on_connect = on_connect\nmqtt_client.on_message = on_message\n# Conecta ao HiveMQ\nmqtt_client.connect(broker_url, broker_port, 60)\n# Inicia o loop para receber mensagens MQTT\nmqtt_client.loop_start()\n# Configurações do simulador\ndef default_settings():",
+        "detail": "mqtt-simulator.mqtt-simulator.script_novato",
+        "documentation": {}
+    },
+    {
+        "label": "mqtt_client.on_connect",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_novato",
+        "description": "mqtt-simulator.mqtt-simulator.script_novato",
+        "peekOfCode": "mqtt_client.on_connect = on_connect\nmqtt_client.on_message = on_message\n# Conecta ao HiveMQ\nmqtt_client.connect(broker_url, broker_port, 60)\n# Inicia o loop para receber mensagens MQTT\nmqtt_client.loop_start()\n# Configurações do simulador\ndef default_settings():\n    base_folder = Path(__file__).resolve().parent.parent\n    settings_file = base_folder / \"config/settings.json\"",
+        "detail": "mqtt-simulator.mqtt-simulator.script_novato",
+        "documentation": {}
+    },
+    {
+        "label": "mqtt_client.on_message",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_novato",
+        "description": "mqtt-simulator.mqtt-simulator.script_novato",
+        "peekOfCode": "mqtt_client.on_message = on_message\n# Conecta ao HiveMQ\nmqtt_client.connect(broker_url, broker_port, 60)\n# Inicia o loop para receber mensagens MQTT\nmqtt_client.loop_start()\n# Configurações do simulador\ndef default_settings():\n    base_folder = Path(__file__).resolve().parent.parent\n    settings_file = base_folder / \"config/settings.json\"\n    return settings_file",
+        "detail": "mqtt-simulator.mqtt-simulator.script_novato",
+        "documentation": {}
+    },
+    {
+        "label": "parser",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_novato",
+        "description": "mqtt-simulator.mqtt-simulator.script_novato",
+        "peekOfCode": "parser = argparse.ArgumentParser()\nparser.add_argument(\n    \"-f\",\n    \"--file\",\n    dest=\"settings_file\",\n    type=lambda x: is_valid_file(parser, x),\n    help=\"settings file\",\n    default=default_settings(),\n)\nargs = parser.parse_args()",
+        "detail": "mqtt-simulator.mqtt-simulator.script_novato",
+        "documentation": {}
+    },
+    {
+        "label": "args",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_novato",
+        "description": "mqtt-simulator.mqtt-simulator.script_novato",
+        "peekOfCode": "args = parser.parse_args()\n# INFLUX DB\nimport influxdb_client\nimport os\nimport time\nfrom influxdb_client import InfluxDBClient, Point, WritePrecision\nfrom influxdb_client.client.write_api import SYNCHRONOUS\ntoken = \"pCEvuFp9aKDrFFXPKbTDQUN80BLtemqAmHoxpW7lR4md-ZUmcdlIp4IH8Nq-E_U-pu3didUA-FK4T907DSG7-Q==\"\norg = \"my-org\"\nurl = \"http://localhost:8086\"",
+        "detail": "mqtt-simulator.mqtt-simulator.script_novato",
+        "documentation": {}
+    },
+    {
+        "label": "token",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_novato",
+        "description": "mqtt-simulator.mqtt-simulator.script_novato",
+        "peekOfCode": "token = \"pCEvuFp9aKDrFFXPKbTDQUN80BLtemqAmHoxpW7lR4md-ZUmcdlIp4IH8Nq-E_U-pu3didUA-FK4T907DSG7-Q==\"\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nwrite_client = influxdb_client.InfluxDBClient(url=url, token=token, org=org)\nbucket = \"irrigation\"\nwrite_api = write_client.write_api(write_options=SYNCHRONOUS)\nfor value in range(5):\n    point = Point(\"measurement1\").tag(\"tagname1\", \"tagvalue1\").field(\"field1\", value)\n    write_api.write(bucket=bucket, org=org, record=point)\n    time.sleep(1)  # separate points by 1 second",
+        "detail": "mqtt-simulator.mqtt-simulator.script_novato",
+        "documentation": {}
+    },
+    {
+        "label": "org",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_novato",
+        "description": "mqtt-simulator.mqtt-simulator.script_novato",
+        "peekOfCode": "org = \"my-org\"\nurl = \"http://localhost:8086\"\nwrite_client = influxdb_client.InfluxDBClient(url=url, token=token, org=org)\nbucket = \"irrigation\"\nwrite_api = write_client.write_api(write_options=SYNCHRONOUS)\nfor value in range(5):\n    point = Point(\"measurement1\").tag(\"tagname1\", \"tagvalue1\").field(\"field1\", value)\n    write_api.write(bucket=bucket, org=org, record=point)\n    time.sleep(1)  # separate points by 1 second\nquery_api = write_client.query_api()",
+        "detail": "mqtt-simulator.mqtt-simulator.script_novato",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_novato",
+        "description": "mqtt-simulator.mqtt-simulator.script_novato",
+        "peekOfCode": "url = \"http://localhost:8086\"\nwrite_client = influxdb_client.InfluxDBClient(url=url, token=token, org=org)\nbucket = \"irrigation\"\nwrite_api = write_client.write_api(write_options=SYNCHRONOUS)\nfor value in range(5):\n    point = Point(\"measurement1\").tag(\"tagname1\", \"tagvalue1\").field(\"field1\", value)\n    write_api.write(bucket=bucket, org=org, record=point)\n    time.sleep(1)  # separate points by 1 second\nquery_api = write_client.query_api()\nquery = \"\"\"from(bucket: \"irrigation\")",
+        "detail": "mqtt-simulator.mqtt-simulator.script_novato",
+        "documentation": {}
+    },
+    {
+        "label": "write_client",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_novato",
+        "description": "mqtt-simulator.mqtt-simulator.script_novato",
+        "peekOfCode": "write_client = influxdb_client.InfluxDBClient(url=url, token=token, org=org)\nbucket = \"irrigation\"\nwrite_api = write_client.write_api(write_options=SYNCHRONOUS)\nfor value in range(5):\n    point = Point(\"measurement1\").tag(\"tagname1\", \"tagvalue1\").field(\"field1\", value)\n    write_api.write(bucket=bucket, org=org, record=point)\n    time.sleep(1)  # separate points by 1 second\nquery_api = write_client.query_api()\nquery = \"\"\"from(bucket: \"irrigation\")\n |> range(start: -10m)",
+        "detail": "mqtt-simulator.mqtt-simulator.script_novato",
+        "documentation": {}
+    },
+    {
+        "label": "bucket",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_novato",
+        "description": "mqtt-simulator.mqtt-simulator.script_novato",
+        "peekOfCode": "bucket = \"irrigation\"\nwrite_api = write_client.write_api(write_options=SYNCHRONOUS)\nfor value in range(5):\n    point = Point(\"measurement1\").tag(\"tagname1\", \"tagvalue1\").field(\"field1\", value)\n    write_api.write(bucket=bucket, org=org, record=point)\n    time.sleep(1)  # separate points by 1 second\nquery_api = write_client.query_api()\nquery = \"\"\"from(bucket: \"irrigation\")\n |> range(start: -10m)\n |> filter(fn: (r) => r._measurement == \"measurement1\")\"\"\"",
+        "detail": "mqtt-simulator.mqtt-simulator.script_novato",
+        "documentation": {}
+    },
+    {
+        "label": "write_api",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_novato",
+        "description": "mqtt-simulator.mqtt-simulator.script_novato",
+        "peekOfCode": "write_api = write_client.write_api(write_options=SYNCHRONOUS)\nfor value in range(5):\n    point = Point(\"measurement1\").tag(\"tagname1\", \"tagvalue1\").field(\"field1\", value)\n    write_api.write(bucket=bucket, org=org, record=point)\n    time.sleep(1)  # separate points by 1 second\nquery_api = write_client.query_api()\nquery = \"\"\"from(bucket: \"irrigation\")\n |> range(start: -10m)\n |> filter(fn: (r) => r._measurement == \"measurement1\")\"\"\"\ntables = query_api.query(query, org=\"my-org\")",
+        "detail": "mqtt-simulator.mqtt-simulator.script_novato",
+        "documentation": {}
+    },
+    {
+        "label": "query_api",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_novato",
+        "description": "mqtt-simulator.mqtt-simulator.script_novato",
+        "peekOfCode": "query_api = write_client.query_api()\nquery = \"\"\"from(bucket: \"irrigation\")\n |> range(start: -10m)\n |> filter(fn: (r) => r._measurement == \"measurement1\")\"\"\"\ntables = query_api.query(query, org=\"my-org\")\nfor table in tables:\n    for record in table.records:\n        print(record)\n# Inicia o simulador com as configurações fornecidas\nsimulator = Simulator(args.settings_file)",
+        "detail": "mqtt-simulator.mqtt-simulator.script_novato",
+        "documentation": {}
+    },
+    {
+        "label": "query",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_novato",
+        "description": "mqtt-simulator.mqtt-simulator.script_novato",
+        "peekOfCode": "query = \"\"\"from(bucket: \"irrigation\")\n |> range(start: -10m)\n |> filter(fn: (r) => r._measurement == \"measurement1\")\"\"\"\ntables = query_api.query(query, org=\"my-org\")\nfor table in tables:\n    for record in table.records:\n        print(record)\n# Inicia o simulador com as configurações fornecidas\nsimulator = Simulator(args.settings_file)\nsimulator.run()",
+        "detail": "mqtt-simulator.mqtt-simulator.script_novato",
+        "documentation": {}
+    },
+    {
+        "label": "tables",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_novato",
+        "description": "mqtt-simulator.mqtt-simulator.script_novato",
+        "peekOfCode": "tables = query_api.query(query, org=\"my-org\")\nfor table in tables:\n    for record in table.records:\n        print(record)\n# Inicia o simulador com as configurações fornecidas\nsimulator = Simulator(args.settings_file)\nsimulator.run()",
+        "detail": "mqtt-simulator.mqtt-simulator.script_novato",
+        "documentation": {}
+    },
+    {
+        "label": "simulator",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_novato",
+        "description": "mqtt-simulator.mqtt-simulator.script_novato",
+        "peekOfCode": "simulator = Simulator(args.settings_file)\nsimulator.run()",
+        "detail": "mqtt-simulator.mqtt-simulator.script_novato",
+        "documentation": {}
+    },
+    {
+        "label": "on_connect",
+        "kind": 2,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "description": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "peekOfCode": "def on_connect(client, userdata, flags, rc):\n    print(\"Conectado ao HiveMQ\")\n    # Inscreva-se nos tópicos com base no prefixo\n    client.subscribe(topic_prefix + \"/#\")\n# Função de callback para quando uma mensagem MQTT é recebida\ndef on_message(client, userdata, msg):\n    print(f\"Mensagem recebida - Tópico: {msg.topic}, Mensagem: {msg.payload.decode()}\")\n# Função para validar o arquivo de configurações\ndef is_valid_file(parser, arg):\n    settings_file = Path(arg)",
+        "detail": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "documentation": {}
+    },
+    {
+        "label": "on_message",
+        "kind": 2,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "description": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "peekOfCode": "def on_message(client, userdata, msg):\n    print(f\"Mensagem recebida - Tópico: {msg.topic}, Mensagem: {msg.payload.decode()}\")\n# Função para validar o arquivo de configurações\ndef is_valid_file(parser, arg):\n    settings_file = Path(arg)\n    if not settings_file.is_file():\n        return parser.error(f\"argument -f/--file: can't open '{arg}'\")\n    return settings_file\n# Cria um cliente MQTT\nmqtt_client = mqtt.Client()",
+        "detail": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "documentation": {}
+    },
+    {
+        "label": "is_valid_file",
+        "kind": 2,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "description": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "peekOfCode": "def is_valid_file(parser, arg):\n    settings_file = Path(arg)\n    if not settings_file.is_file():\n        return parser.error(f\"argument -f/--file: can't open '{arg}'\")\n    return settings_file\n# Cria um cliente MQTT\nmqtt_client = mqtt.Client()\n# Define as funções de callback\nmqtt_client.on_connect = on_connect\nmqtt_client.on_message = on_message",
+        "detail": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "documentation": {}
+    },
+    {
+        "label": "default_settings",
+        "kind": 2,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "description": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "peekOfCode": "def default_settings():\n    base_folder = Path(__file__).resolve().parent.parent\n    settings_file = base_folder / \"config/settings.json\"\n    return settings_file\nparser = argparse.ArgumentParser()\nparser.add_argument(\n    \"-f\",\n    \"--file\",\n    dest=\"settings_file\",\n    type=lambda x: is_valid_file(parser, x),",
+        "detail": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "documentation": {}
+    },
+    {
+        "label": "broker_url",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "description": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "peekOfCode": "broker_url = \"localhost\"  # Endereço IP do HiveMQ\nbroker_port = 1883  # Porta do HiveMQ\ntopic_prefix = \"irrigation\"  # Prefixo dos tópicos a serem inscritos\n# Função de callback para quando a conexão MQTT é estabelecida\ndef on_connect(client, userdata, flags, rc):\n    print(\"Conectado ao HiveMQ\")\n    # Inscreva-se nos tópicos com base no prefixo\n    client.subscribe(topic_prefix + \"/#\")\n# Função de callback para quando uma mensagem MQTT é recebida\ndef on_message(client, userdata, msg):",
+        "detail": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "documentation": {}
+    },
+    {
+        "label": "broker_port",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "description": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "peekOfCode": "broker_port = 1883  # Porta do HiveMQ\ntopic_prefix = \"irrigation\"  # Prefixo dos tópicos a serem inscritos\n# Função de callback para quando a conexão MQTT é estabelecida\ndef on_connect(client, userdata, flags, rc):\n    print(\"Conectado ao HiveMQ\")\n    # Inscreva-se nos tópicos com base no prefixo\n    client.subscribe(topic_prefix + \"/#\")\n# Função de callback para quando uma mensagem MQTT é recebida\ndef on_message(client, userdata, msg):\n    print(f\"Mensagem recebida - Tópico: {msg.topic}, Mensagem: {msg.payload.decode()}\")",
+        "detail": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "documentation": {}
+    },
+    {
+        "label": "topic_prefix",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "description": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "peekOfCode": "topic_prefix = \"irrigation\"  # Prefixo dos tópicos a serem inscritos\n# Função de callback para quando a conexão MQTT é estabelecida\ndef on_connect(client, userdata, flags, rc):\n    print(\"Conectado ao HiveMQ\")\n    # Inscreva-se nos tópicos com base no prefixo\n    client.subscribe(topic_prefix + \"/#\")\n# Função de callback para quando uma mensagem MQTT é recebida\ndef on_message(client, userdata, msg):\n    print(f\"Mensagem recebida - Tópico: {msg.topic}, Mensagem: {msg.payload.decode()}\")\n# Função para validar o arquivo de configurações",
+        "detail": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "documentation": {}
+    },
+    {
+        "label": "mqtt_client",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "description": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "peekOfCode": "mqtt_client = mqtt.Client()\n# Define as funções de callback\nmqtt_client.on_connect = on_connect\nmqtt_client.on_message = on_message\n# Conecta ao HiveMQ\nmqtt_client.connect(broker_url, broker_port, 60)\n# Inicia o loop para receber mensagens MQTT\nmqtt_client.loop_start()\n# Configurações do simulador\ndef default_settings():",
+        "detail": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "documentation": {}
+    },
+    {
+        "label": "mqtt_client.on_connect",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "description": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "peekOfCode": "mqtt_client.on_connect = on_connect\nmqtt_client.on_message = on_message\n# Conecta ao HiveMQ\nmqtt_client.connect(broker_url, broker_port, 60)\n# Inicia o loop para receber mensagens MQTT\nmqtt_client.loop_start()\n# Configurações do simulador\ndef default_settings():\n    base_folder = Path(__file__).resolve().parent.parent\n    settings_file = base_folder / \"config/settings.json\"",
+        "detail": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "documentation": {}
+    },
+    {
+        "label": "mqtt_client.on_message",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "description": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "peekOfCode": "mqtt_client.on_message = on_message\n# Conecta ao HiveMQ\nmqtt_client.connect(broker_url, broker_port, 60)\n# Inicia o loop para receber mensagens MQTT\nmqtt_client.loop_start()\n# Configurações do simulador\ndef default_settings():\n    base_folder = Path(__file__).resolve().parent.parent\n    settings_file = base_folder / \"config/settings.json\"\n    return settings_file",
+        "detail": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "documentation": {}
+    },
+    {
+        "label": "parser",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "description": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "peekOfCode": "parser = argparse.ArgumentParser()\nparser.add_argument(\n    \"-f\",\n    \"--file\",\n    dest=\"settings_file\",\n    type=lambda x: is_valid_file(parser, x),\n    help=\"settings file\",\n    default=default_settings(),\n)\nargs = parser.parse_args()",
+        "detail": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "documentation": {}
+    },
+    {
+        "label": "args",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "description": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "peekOfCode": "args = parser.parse_args()\n# Lê as configurações do JSON\nwith open(args.settings_file) as json_file:\n    config = json.load(json_file)\ninflux_config = config[\"INFLUX_DB\"]\nurl = influx_config[\"URL\"]\ntoken = influx_config[\"TOKEN\"]\norg = influx_config[\"ORG\"]\nbucket = influx_config[\"BUCKET\"]\n# Cria o ponto de dados",
+        "detail": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "documentation": {}
+    },
+    {
+        "label": "influx_config",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "description": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "peekOfCode": "influx_config = config[\"INFLUX_DB\"]\nurl = influx_config[\"URL\"]\ntoken = influx_config[\"TOKEN\"]\norg = influx_config[\"ORG\"]\nbucket = influx_config[\"BUCKET\"]\n# Cria o ponto de dados\npoint = Point(\"weatherstation\")\npoint.tag(\"location\", \"San Francisco\")\n# Adiciona os campos ao ponto de dados com base nas configurações do JSON\nfor data in influx_config[\"DATA\"]:",
+        "detail": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "description": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "peekOfCode": "url = influx_config[\"URL\"]\ntoken = influx_config[\"TOKEN\"]\norg = influx_config[\"ORG\"]\nbucket = influx_config[\"BUCKET\"]\n# Cria o ponto de dados\npoint = Point(\"weatherstation\")\npoint.tag(\"location\", \"San Francisco\")\n# Adiciona os campos ao ponto de dados com base nas configurações do JSON\nfor data in influx_config[\"DATA\"]:\n    field_name = data[\"NAME\"]",
+        "detail": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "documentation": {}
+    },
+    {
+        "label": "token",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "description": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "peekOfCode": "token = influx_config[\"TOKEN\"]\norg = influx_config[\"ORG\"]\nbucket = influx_config[\"BUCKET\"]\n# Cria o ponto de dados\npoint = Point(\"weatherstation\")\npoint.tag(\"location\", \"San Francisco\")\n# Adiciona os campos ao ponto de dados com base nas configurações do JSON\nfor data in influx_config[\"DATA\"]:\n    field_name = data[\"NAME\"]\n    field_type = data[\"TYPE\"]",
+        "detail": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "documentation": {}
+    },
+    {
+        "label": "org",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "description": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "peekOfCode": "org = influx_config[\"ORG\"]\nbucket = influx_config[\"BUCKET\"]\n# Cria o ponto de dados\npoint = Point(\"weatherstation\")\npoint.tag(\"location\", \"San Francisco\")\n# Adiciona os campos ao ponto de dados com base nas configurações do JSON\nfor data in influx_config[\"DATA\"]:\n    field_name = data[\"NAME\"]\n    field_type = data[\"TYPE\"]\n    field_value = None",
+        "detail": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "documentation": {}
+    },
+    {
+        "label": "bucket",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "description": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "peekOfCode": "bucket = influx_config[\"BUCKET\"]\n# Cria o ponto de dados\npoint = Point(\"weatherstation\")\npoint.tag(\"location\", \"San Francisco\")\n# Adiciona os campos ao ponto de dados com base nas configurações do JSON\nfor data in influx_config[\"DATA\"]:\n    field_name = data[\"NAME\"]\n    field_type = data[\"TYPE\"]\n    field_value = None\n    if field_type == \"bool\":",
+        "detail": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "documentation": {}
+    },
+    {
+        "label": "point",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "description": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "peekOfCode": "point = Point(\"weatherstation\")\npoint.tag(\"location\", \"San Francisco\")\n# Adiciona os campos ao ponto de dados com base nas configurações do JSON\nfor data in influx_config[\"DATA\"]:\n    field_name = data[\"NAME\"]\n    field_type = data[\"TYPE\"]\n    field_value = None\n    if field_type == \"bool\":\n        field_value = True\n    elif field_type == \"int\":",
+        "detail": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "description": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "peekOfCode": "client = InfluxDBClient(url=url, token=token, org=org)\n# Grava o ponto de dados",
+        "detail": "mqtt-simulator.mqtt-simulator.script_versao2",
+        "documentation": {}
+    },
+    {
+        "label": "on_connect",
+        "kind": 2,
+        "importPath": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "description": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "peekOfCode": "def on_connect(client, userdata, flags, rc):\n    print(\"Conectado ao HiveMQ\")\n    # Inscreva-se nos tópicos com base no prefixo\n    client.subscribe(topic_prefix + \"/#\")\n# Função de callback para quando uma mensagem MQTT é recebida\ndef on_message(client, userdata, msg):\n    print(f\"Mensagem recebida - Tópico: {msg.topic}, Mensagem: {msg.payload.decode()}\")\n    # Envia a mensagem para o InfluxDB\n    write_to_influxdb(msg.topic, msg.payload.decode())\n# Função para validar o arquivo de configurações",
+        "detail": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "documentation": {}
+    },
+    {
+        "label": "on_message",
+        "kind": 2,
+        "importPath": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "description": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "peekOfCode": "def on_message(client, userdata, msg):\n    print(f\"Mensagem recebida - Tópico: {msg.topic}, Mensagem: {msg.payload.decode()}\")\n    # Envia a mensagem para o InfluxDB\n    write_to_influxdb(msg.topic, msg.payload.decode())\n# Função para validar o arquivo de configurações\ndef is_valid_file(parser, arg):\n    settings_file = Path(arg)\n    if not settings_file.is_file():\n        return parser.error(f\"argument -f/--file: can't open '{arg}'\")\n    return settings_file",
+        "detail": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "documentation": {}
+    },
+    {
+        "label": "is_valid_file",
+        "kind": 2,
+        "importPath": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "description": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "peekOfCode": "def is_valid_file(parser, arg):\n    settings_file = Path(arg)\n    if not settings_file.is_file():\n        return parser.error(f\"argument -f/--file: can't open '{arg}'\")\n    return settings_file\n# Função para escrever os dados no InfluxDB\ndef write_to_influxdb(topic, message):\n    write_client = InfluxDBClient(url=url, token=token, org=org)\n    write_api = write_client.write_api(write_options=SYNCHRONOUS)\n    # Parse a mensagem recebida e grave os dados no InfluxDB",
+        "detail": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "documentation": {}
+    },
+    {
+        "label": "write_to_influxdb",
+        "kind": 2,
+        "importPath": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "description": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "peekOfCode": "def write_to_influxdb(topic, message):\n    write_client = InfluxDBClient(url=url, token=token, org=org)\n    write_api = write_client.write_api(write_options=SYNCHRONOUS)\n    # Parse a mensagem recebida e grave os dados no InfluxDB\n    data = json.loads(message)\n    measurement = topic[len(topic_prefix) + 1 :]  # Remove o prefixo do tópico\n    point = Point(measurement)\n    for key, value in data.items():\n        if isinstance(value, bool):\n            point = point.field(key, int(value))",
+        "detail": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "documentation": {}
+    },
+    {
+        "label": "default_settings",
+        "kind": 2,
+        "importPath": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "description": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "peekOfCode": "def default_settings():\n    base_folder = Path(__file__).resolve().parent.parent\n    settings_file = base_folder / \"config/settings.json\"\n    return settings_file\nargparser = argparse.ArgumentParser()\nargparser.add_argument(\n    \"-f\",\n    \"--file\",\n    dest=\"settings_file\",\n    type=lambda x: is_valid_file(argparser, x),",
+        "detail": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "documentation": {}
+    },
+    {
+        "label": "broker_url",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "description": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "peekOfCode": "broker_url = \"localhost\"  # Endereço IP do HiveMQ\nbroker_port = 1883  # Porta do HiveMQ\ntopic_prefix = \"irrigation\"  # Prefixo dos tópicos a serem inscritos\n# Configurações do InfluxDB\ntoken = \"pCEvuFp9aKDrFFXPKbTDQUN80BLtemqAmHoxpW7lR4md-ZUmcdlIp4IH8Nq-E_U-pu3didUA-FK4T907DSG7-Q==\"\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nbucket = \"irrigation\"\n# Função de callback para quando a conexão MQTT é estabelecida\ndef on_connect(client, userdata, flags, rc):",
+        "detail": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "documentation": {}
+    },
+    {
+        "label": "broker_port",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "description": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "peekOfCode": "broker_port = 1883  # Porta do HiveMQ\ntopic_prefix = \"irrigation\"  # Prefixo dos tópicos a serem inscritos\n# Configurações do InfluxDB\ntoken = \"pCEvuFp9aKDrFFXPKbTDQUN80BLtemqAmHoxpW7lR4md-ZUmcdlIp4IH8Nq-E_U-pu3didUA-FK4T907DSG7-Q==\"\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nbucket = \"irrigation\"\n# Função de callback para quando a conexão MQTT é estabelecida\ndef on_connect(client, userdata, flags, rc):\n    print(\"Conectado ao HiveMQ\")",
+        "detail": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "documentation": {}
+    },
+    {
+        "label": "topic_prefix",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "description": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "peekOfCode": "topic_prefix = \"irrigation\"  # Prefixo dos tópicos a serem inscritos\n# Configurações do InfluxDB\ntoken = \"pCEvuFp9aKDrFFXPKbTDQUN80BLtemqAmHoxpW7lR4md-ZUmcdlIp4IH8Nq-E_U-pu3didUA-FK4T907DSG7-Q==\"\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nbucket = \"irrigation\"\n# Função de callback para quando a conexão MQTT é estabelecida\ndef on_connect(client, userdata, flags, rc):\n    print(\"Conectado ao HiveMQ\")\n    # Inscreva-se nos tópicos com base no prefixo",
+        "detail": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "documentation": {}
+    },
+    {
+        "label": "token",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "description": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "peekOfCode": "token = \"pCEvuFp9aKDrFFXPKbTDQUN80BLtemqAmHoxpW7lR4md-ZUmcdlIp4IH8Nq-E_U-pu3didUA-FK4T907DSG7-Q==\"\norg = \"my-org\"\nurl = \"http://localhost:8086\"\nbucket = \"irrigation\"\n# Função de callback para quando a conexão MQTT é estabelecida\ndef on_connect(client, userdata, flags, rc):\n    print(\"Conectado ao HiveMQ\")\n    # Inscreva-se nos tópicos com base no prefixo\n    client.subscribe(topic_prefix + \"/#\")\n# Função de callback para quando uma mensagem MQTT é recebida",
+        "detail": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "documentation": {}
+    },
+    {
+        "label": "org",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "description": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "peekOfCode": "org = \"my-org\"\nurl = \"http://localhost:8086\"\nbucket = \"irrigation\"\n# Função de callback para quando a conexão MQTT é estabelecida\ndef on_connect(client, userdata, flags, rc):\n    print(\"Conectado ao HiveMQ\")\n    # Inscreva-se nos tópicos com base no prefixo\n    client.subscribe(topic_prefix + \"/#\")\n# Função de callback para quando uma mensagem MQTT é recebida\ndef on_message(client, userdata, msg):",
+        "detail": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "description": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "peekOfCode": "url = \"http://localhost:8086\"\nbucket = \"irrigation\"\n# Função de callback para quando a conexão MQTT é estabelecida\ndef on_connect(client, userdata, flags, rc):\n    print(\"Conectado ao HiveMQ\")\n    # Inscreva-se nos tópicos com base no prefixo\n    client.subscribe(topic_prefix + \"/#\")\n# Função de callback para quando uma mensagem MQTT é recebida\ndef on_message(client, userdata, msg):\n    print(f\"Mensagem recebida - Tópico: {msg.topic}, Mensagem: {msg.payload.decode()}\")",
+        "detail": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "documentation": {}
+    },
+    {
+        "label": "bucket",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "description": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "peekOfCode": "bucket = \"irrigation\"\n# Função de callback para quando a conexão MQTT é estabelecida\ndef on_connect(client, userdata, flags, rc):\n    print(\"Conectado ao HiveMQ\")\n    # Inscreva-se nos tópicos com base no prefixo\n    client.subscribe(topic_prefix + \"/#\")\n# Função de callback para quando uma mensagem MQTT é recebida\ndef on_message(client, userdata, msg):\n    print(f\"Mensagem recebida - Tópico: {msg.topic}, Mensagem: {msg.payload.decode()}\")\n    # Envia a mensagem para o InfluxDB",
+        "detail": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "documentation": {}
+    },
+    {
+        "label": "mqtt_client",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "description": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "peekOfCode": "mqtt_client = mqtt.Client()\n# Define as funções de callback\nmqtt_client.on_connect = on_connect\nmqtt_client.on_message = on_message\n# Conecta ao HiveMQ\nmqtt_client.connect(broker_url, broker_port, 60)\n# Inicia o loop para receber mensagens MQTT\nmqtt_client.loop_start()\n# Configurações do simulador\ndef default_settings():",
+        "detail": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "documentation": {}
+    },
+    {
+        "label": "mqtt_client.on_connect",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "description": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "peekOfCode": "mqtt_client.on_connect = on_connect\nmqtt_client.on_message = on_message\n# Conecta ao HiveMQ\nmqtt_client.connect(broker_url, broker_port, 60)\n# Inicia o loop para receber mensagens MQTT\nmqtt_client.loop_start()\n# Configurações do simulador\ndef default_settings():\n    base_folder = Path(__file__).resolve().parent.parent\n    settings_file = base_folder / \"config/settings.json\"",
+        "detail": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "documentation": {}
+    },
+    {
+        "label": "mqtt_client.on_message",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "description": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "peekOfCode": "mqtt_client.on_message = on_message\n# Conecta ao HiveMQ\nmqtt_client.connect(broker_url, broker_port, 60)\n# Inicia o loop para receber mensagens MQTT\nmqtt_client.loop_start()\n# Configurações do simulador\ndef default_settings():\n    base_folder = Path(__file__).resolve().parent.parent\n    settings_file = base_folder / \"config/settings.json\"\n    return settings_file",
+        "detail": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "documentation": {}
+    },
+    {
+        "label": "argparser",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "description": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "peekOfCode": "argparser = argparse.ArgumentParser()\nargparser.add_argument(\n    \"-f\",\n    \"--file\",\n    dest=\"settings_file\",\n    type=lambda x: is_valid_file(argparser, x),\n    help=\"settings file\",\n    default=default_settings(),\n)\nargs = argparser.parse_args()",
+        "detail": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "documentation": {}
+    },
+    {
+        "label": "args",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "description": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "peekOfCode": "args = argparser.parse_args()\n# Inicia o simulador com as configurações fornecidas\nsimulator = Simulator(args.settings_file)\nsimulator.run()",
+        "detail": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "documentation": {}
+    },
+    {
+        "label": "simulator",
+        "kind": 5,
+        "importPath": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "description": "mqtt-simulator.mqtt-simulator.scritp_v3",
+        "peekOfCode": "simulator = Simulator(args.settings_file)\nsimulator.run()",
+        "detail": "mqtt-simulator.mqtt-simulator.scritp_v3",
         "documentation": {}
     },
     {
