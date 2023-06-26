@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     BUCKET: str ="Usuarios"
     DBBaseModel: str = declarative_base()
 
-    INFLUXDB_TOKEN: str = "167x85pD7ILjp39izsESGQiffxb3MXrEKP8jcay_r_uullGq47QQ7DebXNgDQ0pQG3hP8ZQlhcDB66vJMv_OZg=="
+    INFLUXDB_TOKEN: str = "Kt3E1sjNuZ6nCsbDAv6v7kQYmd_bCuzwysNO59WTTFe6bZOaglavqyCeLh9wU2BKfALDauOynwdPHyLPPYsb1Q=="
     INFLUXDB_URL: str = "http://localhost:8086"
     INFLUXDB_ORG: str = "my-org"
     
