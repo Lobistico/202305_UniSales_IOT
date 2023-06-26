@@ -1,0 +1,72 @@
+.display {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menusLinks {
+  display: flex;
+}
+
+.menusLinks li {
+  margin: auto 10px;
+  color: #4769f4;
+  font-weight: 600;
+}
+
+.header {
+  display: flex;
+  min-height: 100px;
+}
+
+.header .blocoLogo {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 0.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  color: #4769f4;
+}
+
+.header {
+  background-color:  #fff;
+  border-bottom: 2px solid #f8f8f8;
+}
+
+.menusUser {
+  position: relative;
+}
+.circuloHeader {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  position: relative;
+  cursor: pointer;
+}
+.circuloHeader:hover {
+  background-color: #a3a4a7;
+  transition: all 0.5s;
+
+}
+
+.drop {
+  position: absolute;
+  min-width: 200px;
+  margin-top: 5px;
+  right: 0;
+  background-color: #4769f4;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+.drop * {
+  color: #f8f8f8;
+}
