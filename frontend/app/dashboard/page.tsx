@@ -1,7 +1,7 @@
 'use client';
 import { api } from "@/services/api";
 import { parseCookies } from "nookies";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from './styles.module.css';
 import { format } from "date-fns";
 import GetDay from "@/functions/getDay";
@@ -13,28 +13,65 @@ export default function Home(){
   const {'tokenEstufa': token} =  parseCookies();
   const [sensorAtivo, setSensorAtivo] = useState<boolean>(false);
 
-  const [sensor, setSensor] = useState<number>();
+  const [sensor, setSensor] = useState<number>(0);
   const [tempUmi, setTempUmi] = useState<any>(null);
   const [regado, setRegado] = useState<any>(null);
-  const [relatorios, setRelatorios] = useState<any>(null)
+  const [relatorios, setRelatorios] = useState<any>()
+  const [boolenaRelatorio, setBoolenaRelatorio] = useState<boolean>(true);
 
   async function funcSensor(sensor: number) { 
-    setSensorAtivo(!sensorAtivo)
-    setSensor(sensor)
-    api.defaults.headers['authorization'] = `Bearer ${token}`;
-    const UmidadeTemperatura = await api.get(`plantacao/sensor_${sensor}`);
-
-    const areaRegada = await api.get(`plantacao/areas_regadas/sensor_${sensor}`);
-
-    if(UmidadeTemperatura.status === 200 && areaRegada.status === 200) {
-      if(UmidadeTemperatura.data.length > 0 ) setTempUmi(UmidadeTemperatura.data);
-      if(areaRegada.data.length > 0 ) setRegado(areaRegada.data[0])
+    if (sensor > 0 ) {
+      setSensorAtivo(!sensorAtivo)
+      setSensor(sensor)
+      
+      api.defaults.headers['authorization'] = `Bearer ${token}`;
+      const UmidadeTemperatura = await api.get(`plantacao/sensor_${sensor}`);
+  
+      console.log(UmidadeTemperatura);
+      const areaRegada = await api.get(`plantacao/areas_regadas/sensor_${sensor}`);
+  
+      if(UmidadeTemperatura.status === 200 && areaRegada.status === 200) {
+        if(UmidadeTemperatura.data.length > 0 ) setTempUmi(UmidadeTemperatura.data);
+        if(areaRegada.data.length > 0 ) setRegado(areaRegada.data[0])
+      }
     }
   }
 
-  function fecharModalSensor (){
+  useEffect(() => {
+    async function f() {
+      api.defaults.headers['authorization'] = `Bearer ${token}`;
+      const UmidadeTemperatura = await api.get(`plantacao/sensor_${sensor? sensor : 1}`);
+
+      console.log(UmidadeTemperatura);
+      const areaRegada = await api.get(`plantacao/areas_regadas/sensor_${sensor? sensor : 1}`);
+
+      if(UmidadeTemperatura.status === 200 && areaRegada.status === 200) {
+        if(UmidadeTemperatura.data.length > 0 ) setTempUmi(UmidadeTemperatura.data);
+        if(areaRegada.data.length > 0 ) setRegado(areaRegada.data[0])
+      }
+    }
+    if(sensor > 0) {
+      f()
+    }
+
+  },[sensor, tempUmi])
+
+
+
+  function fecharModalSensor () {
+    setSensor(0);
     setRegado(null);
     setSensorAtivo(!sensorAtivo)
+    setRelatorios(null)
+    setTempUmi(null);
+    setBoolenaRelatorio(true);
+  }
+
+  function fecharRelatorio() {
+    if(!boolenaRelatorio) {
+      setRelatorios(null);
+    }
+    setBoolenaRelatorio(!boolenaRelatorio);
   }
 
   async function irrigarArea() {
@@ -58,19 +95,19 @@ export default function Home(){
   }
 
   async function verRelatorio( ) {
+    fecharRelatorio()
     api.defaults.headers['authorization'] = `Bearer ${token}`;
     const relatorio = await api.get(`plantacao/relatorio/sensor_${sensor}`);
+
     if (relatorio.status === 200) {
       setRelatorios(relatorio.data)
     }
-    console.log(relatorio)
   }
 
 
   return (
     <>
     <div className={`container`}>
-      <h1 className={`titulo m-bot5`}> DashBoard</h1>
       <div className={styles.sensores}>
         <div onClick={() => funcSensor(1)}>
           Sensor 1
@@ -97,45 +134,81 @@ export default function Home(){
                 <div className={styles.flexTempUmi}>
                   <div>
                     <h2>Temperatura da Área</h2>
-                    {tempUmi[0]?._value.toFixed(2).toString().replace('.', ',')} C°
+                    <div className={`${styles.divTempUmi} ${tempUmi[0]?._value > 25 && styles.divRegarRed }`}>
+                      <p>{tempUmi[0]?._value.toFixed(2).toString().replace('.', ',')} C°</p>
+                    </div>
 
                     <h3>Última Atualização</h3>
-                    {format(new Date(tempUmi[0]?._time), 'dd/MM/yyyy HH:mm:ss')}
+                    <div className={`${styles.divHorario}`}>
+                      <span>{format(new Date(tempUmi[0]?._time), 'dd/MM/yyyy HH:mm:ss')}</span>
+                    </div>
                     <br />
-                    <button title="Ver Relatório de Temperatura">Ver Relatório</button>
+
                   </div>
                   <div>
                     <h2>Umidade da Área</h2>
-                    {tempUmi[1]?._value.toFixed(2).toString().replace('.', ',')}
+                    <div className={`${styles.divTempUmi} ${tempUmi[1]?._value > 1 && styles.divRegarRed }`}>
+                      <p>{tempUmi[1]?._value.toFixed(2).toString().replace('.', ',')}</p>
+                    </div>
                     
                     <h3>Última Atualização</h3>
-                    {format(new Date(tempUmi[1]?._time), 'dd/MM/yyyy HH:mm:ss')}
+                    <div className={`${styles.divHorario}`}>
+                      <span>{format(new Date(tempUmi[1]?._time), 'dd/MM/yyyy HH:mm:ss')}</span>
+                    </div>
                     <br />
-                    <button onClick={() => verRelatorio()} title="Ver Relatório de Umidade">Ver Relatório</button>
-                    {/* { relatorios  && 
-     
-                        relatorios.forEach((element: any) => (
-                          <>
-                          {element?._field === "umidade" && (
-                            <>
-                              <p>Temperatura: {element?._value} C°</p>
-                              <p>Data: {element?._time} C°</p>
-                              <hr />
-                            </>
-                          )} 
-                          </>
-
-                        ))
-                        
-                      } */}
 
                   </div>
                 </div>
-                <div className={`${tempUmi[0]?._value > 25 && styles.divBotaoRegarRed } ${styles.divBotaoRegar}`} >
-                  <button onClick={ ()=> irrigarArea()}>Irrigar Área</button>
-                  <legend>{typeof regado == "string" && regado}</legend>
+                <div className={`${styles.divBotaoRegar}`} >
+                  <button className={`${tempUmi[0]?._value > 25 && styles.divRegarRed }`} onClick={ ()=> irrigarArea()}>Irrigar Área</button>
 
-              </div>
+                  {boolenaRelatorio?
+                    <button onClick={() => verRelatorio()} title="Ver Relatório">Ver Relatório</button>
+                  :
+                    !boolenaRelatorio && <button onClick={() => fecharRelatorio()} title="Ver Relatório">Fechar Relatório</button>}
+
+                </div>
+                <div className={styles.divTable}>
+                  <table className={styles.table}>
+                  { relatorios  && 
+                    relatorios.map( (e:any) => (
+                      <>
+
+                        {e?._field === "temperatura" && (
+                          <>
+                          <tr>
+                            <th>Temperatura</th>
+                            <td>{e?._value.toFixed(2).toString().replace('.', ',')}</td>
+                            <th>Data de Registro</th>
+                            <td>{format(new Date(e?._time), 'dd/MM/yyyy HH:mm:ss')}</td>
+                          </tr>
+                          </>
+                        )}                         
+                        
+                      </>
+                    ))
+                  }
+                  </table>
+
+                  <table className={styles.table}>
+                  { relatorios  && 
+                    relatorios.map( (e:any) => (
+                      <>
+                        {e?._field === "umidade" && (
+                          <>
+                          <tr>
+                            <th>Umidade</th>
+                            <td>{e?._value.toFixed(2).toString().replace('.', ',')}</td>
+                            <th>Data de Registro</th>
+                            <td>{format(new Date(e?._time), 'dd/MM/yyyy HH:mm:ss')}</td>
+                          </tr>
+                          </>
+                        )}                             
+                      </>
+                    ))
+                  }
+                  </table>
+                </div>
               </>
             )}
 
